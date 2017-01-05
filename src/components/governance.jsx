@@ -21,7 +21,6 @@ const Governance = React.createClass({
     let styleCarouselItem = {
       //backgroundImage: 'url('+GovImg+')',
       backgroundPosition:'center',
-      height:((heightCarousel*3)/4)+'px'
     }
     return (
       <div id='page-top' style={{minHeight: (this.props.size.height-(this.props.appBar.height+160))+'px'}}>
@@ -49,7 +48,7 @@ const Governance = React.createClass({
                 </li>
                 <li>
                   <h4><u>Dissemination and Communication Manager (DCM)</u></h4>
-                  <p>Markus Hoffman (SUPSI) is in charge of managing and maintain the project information (communication of activities, updates of website and news, etc.).</p>
+                  <p>Marcus Hoffmann (SUPSI) is in charge of managing and maintain the project information (communication of activities, updates of website and news, etc.).</p>
                 </li>
                 <li>
                   <h4><u>Steering Group (SG)</u></h4>
@@ -71,7 +70,26 @@ const Governance = React.createClass({
                 </li>
                 <li>
                   <h4><u>Local Stakeholder Group (LSG)</u></h4>
-                  <p>A restricted group of Sri Lankan Stakeholders that are directly supporting the project execution by facilitating the access at data, permits, information and other relevant aspects. Members will be invited from the irrigation Department and from the meteorological Office of Sri Lanka and from other selected interested bodies.</p>
+                  <p>A restricted group of Sri Lankan Stakeholders that are directly supporting the project execution by facilitating the access at data, permits, information and other relevant aspects. Members will be invited from the irrigation Department and from the meteorological Office of Sri Lanka and from other selected interested bodies.
+                    <br/>LSG Members are:
+                  </p>
+                  <ul>
+                    <li>S. Mohanarajah Cannata (Irrigation Department)</li>
+                    <li>H.G.M. Kulasinghe (Irrigation Department)</li>
+                    <li>S.M.M.R.K. Saurakoon (Irrigation Department)</li>
+                    <li>Dr. (Ms) Soumya Balasubramanya Ratnayake (International Water Management Institute )</li>
+                    <li>Nishadi Eriyagama (International Water Management Institute )</li>
+                    <li>Ama Rajakarunanayaka (Lanka Rain Water Harvesting Forum)</li>
+                    <li>A.P.Benthota (Rice research and development institute bathalagoda)</li>
+                    <li>W. K. Chathuranga Kumarasiri (National Building Research Organization)</li>
+                    <li>K.P.S. Uthpala (Central Environmental Authority)</li>
+                    <li>S.V.P. Gunasekara (Mahaweli Authority )</li>
+                    <li>W.G.W. Gnanatheepan (National Building Research Organization)</li>
+                    <li>K.K. Gunawardana (Telecom)</li>
+                    <li>Tim Hannan (CRP/ DBIP)</li>
+                    <li>Medhani Jayakodi (Climate Resilient Improvement Project)</li>
+                    <li>C.H. Edussunya (Central Environmental Authority )</li>
+                  </ul>
                 </li>
               </ul>
             </Col>

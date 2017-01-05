@@ -27,12 +27,12 @@ const Cooperation = React.createClass({
           <h2 className='title-page'>Cooperation</h2>
           <Divider />
           <p className='paragraph'>
-            After reading the <a href="4onseInformationSheet.pdf"> Infromation Sheet </a> fill the Form below to became a testing partner. </p>
+            After reading the <a href="4onseInformationSheet.pdf"> Information Sheet </a> fill the Form below to became a testing partner. </p>
 
           <p className='paragraph'>
             A testing partner agree to:
             <ul>
-                <li>participate at its own cost to the experiment</li>
+                <li>participate on his own cost to the experiment</li>
                 <li>deploy the 4ONSE station system following the project outcomes (manuals, instructions, components, etc.)</li>
                 <li>monitor the system, share the data and provide feedbacks</li>
             </ul>
