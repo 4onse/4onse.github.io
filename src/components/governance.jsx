@@ -10,14 +10,14 @@ import GovImg from '../data/images/governance/governance.png'
 
 const Governance = React.createClass({
   render () {
-    let heightCarousel
+    /* let heightCarousel
     if (this.props.size.width>=992) {
       heightCarousel = ((992/1.77)-((992*20)/100))
     } else if (this.props.size.width>=750) {
       heightCarousel = ((992/1.77)-((992*20)/100))
     } else {
       heightCarousel = (this.props.size.width/1.77)
-    }
+    }*/
     let styleCarouselItem = {
       //backgroundImage: 'url('+GovImg+')',
       backgroundPosition:'center',
