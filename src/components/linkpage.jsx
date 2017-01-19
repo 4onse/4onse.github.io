@@ -7,13 +7,16 @@ import Table from 'react-bootstrap/lib/Table'
 
 const LinkPage = React.createClass({
   handleClick (value, event) {
-    window.open(value, '_blank');
+    if (value.includes('calendar')) {
+      window.open('#/calendar', '_blank');
+    } else {
+      window.open(value, '_blank');
+    }
   },
   render () {
     return (
       <div id='page-top' style={{minHeight: (this.props.size.height-(this.props.appBar.height+160))+'px'}}>
         <div className='container' >
-
           <h2 className='title-page'>Project links</h2>
           <Divider />
           <div className='paragraph'>
@@ -23,7 +26,7 @@ const LinkPage = React.createClass({
                   <td><strong>B2DROP</strong></td>
                   <td>It provides access to the project data through a web interface, sync clients or WebDAV while providing a platform to view, sync and share across devices easily</td>
                 </tr>
-                <tr style={{cursor: "pointer"}} onClick={this.handleClick.bind(this, 'https://calendar.google.com/calendar/embed?src=4onse.supsi%40gmail.com')}>
+                <tr style={{cursor: "pointer"}} onClick={this.handleClick.bind(this, 'https://calendar.google.com/calendar/embed?src=4onse.supsi%40gmail.com&hl=en_GB')}>
                   <td><strong>Calendar</strong></td>
                   <td>When, where and what are the next meetings, actions, etc. </td>
                 </tr>

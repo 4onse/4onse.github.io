@@ -11,7 +11,8 @@ import Col from 'react-bootstrap/lib/Col'
 /*import Linkedin from '../data/icons/linkedin-logo.svg'
 import Twitter from '../data/icons/twitter.svg'
 import GitHub from '../data/icons/github-logo.svg'*/
-import maxi from '../data/images/team/maxi.jpg'
+import maxi from '../data/images/team/massimiliano_cannata.jpg'
+import marcus from '../data/images/team/marcus_hoffmann.jpg'
 import noImage from '../data/images/team/no-image.png'
 import contacts from '../data/images/background/contacts.jpg'
 //css
@@ -61,7 +62,7 @@ const People = React.createClass({
         role: 'Communication manager',
         partner: 'SUPSI',
         address: <p>Institute of earth sciences<br/><em>Trevano - Blocco C Via Trevano, 6952 Canobbio</em></p>,
-        avatar: noImage,
+        avatar: marcus,
         description: <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         Donec mattis pretium massa. Aliquam erat volutpat. Nulla facilisi.
         Donec vulputate interdum sollicitudin. Nunc lacinia auctor quam sed pellentesque.
@@ -177,7 +178,7 @@ const People = React.createClass({
         Donec vulputate interdum sollicitudin. Nunc lacinia auctor quam sed pellentesque.
         Aliquam dui mauris, mattis quis lacus id, pellentesque lobortis odio.</p>
       }
-      
+
     ]
     const filteredContacts = contactsData.filter(createFilter(this.state.searchTerm, KEYS_TO_FILTERS))
     return (

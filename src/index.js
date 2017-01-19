@@ -25,6 +25,7 @@ import Project from './components/project';
 import Cooperation from './components/project/cooperation';
 import Stakeholders from './components/stakeholders';
 import LinkPage from './components/linkpage';
+import Calendar from './components/calendar';
 import Results from './components/results';
 import Advisoryboard from './components/advisoryboard'
 import Presentations from './components/presentations';
@@ -60,6 +61,7 @@ ReactDOM.render(
         <Route path='materials' component={Materials} />
         <Route path='results' component={Results} />
         <Route path='links' component={LinkPage} />
+        <Route path='calendar' component={Calendar} />
       </Route>
     </Router>
   </MuiThemeProvider>,
