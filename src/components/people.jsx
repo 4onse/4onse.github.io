@@ -13,6 +13,8 @@ import Twitter from '../data/icons/twitter.svg'
 import GitHub from '../data/icons/github-logo.svg'*/
 import maxi from '../data/images/team/massimiliano_cannata.jpg'
 import marcus from '../data/images/team/marcus_hoffmann.jpg'
+import milan from '../data/images/team/milan_antonovic.jpg'
+import mirko from '../data/images/team/mirko_cardoso.jpg'
 import daniele from '../data/images/team/daniele_strigaro.png'
 import rangajeewa from '../data/images/team/rangajeewa_ratnayak.jpg'
 import emeshi from '../data/images/team/emeshi_warusavitharana.jpg'
@@ -78,7 +80,7 @@ const People = React.createClass({
         role: 'Software developer',
         partner: 'SUPSI',
         address: <p>Institute of earth sciences<br/><em>Trevano - Blocco C Via Trevano, 6952 Canobbio</em></p>,
-        avatar: noImage,
+        avatar: milan,
         description: <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         Donec mattis pretium massa. Aliquam erat volutpat. Nulla facilisi.
         Donec vulputate interdum sollicitudin. Nunc lacinia auctor quam sed pellentesque.
@@ -89,7 +91,7 @@ const People = React.createClass({
         role: 'Software developer',
         partner: 'SUPSI',
         address: <p>Institute of earth sciences<br/><em>Trevano - Blocco C Via Trevano, 6952 Canobbio</em></p>,
-        avatar: noImage,
+        avatar: mirko,
         description: <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         Donec mattis pretium massa. Aliquam erat volutpat. Nulla facilisi.
         Donec vulputate interdum sollicitudin. Nunc lacinia auctor quam sed pellentesque.
