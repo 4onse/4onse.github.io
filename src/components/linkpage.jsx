@@ -39,7 +39,7 @@ const LinkPage = React.createClass({
                   <td><strong>Twitter</strong></td>
                   <td>It is used to share news and promote the project activites</td>
                 </tr>
-                <tr style={{cursor: "pointer"}} onClick={this.handleClick.bind(this, 'https://www.linkedin.com/in/snsf-4onse-366a45130')}>
+                <tr style={{cursor: "pointer"}} onClick={this.handleClick.bind(this, 'https://www.linkedin.com/groups/8579328')}>
                   <td><strong>Linkedin</strong></td>
                   <td>It is used to share news and promote the project activites</td>
                 </tr>
