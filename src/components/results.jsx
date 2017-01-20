@@ -28,7 +28,12 @@ const Results = React.createClass({
               <tr style={{cursor: "pointer"}} >
                 <td><strong>D1.2</strong></td>
                 <td>Target stakeholder list</td>
-                <td><a target='_blank'><img role='presentation' height='25' src={linkIcon}></img></a></td>
+                <td><a href='https://b2drop.eudat.eu/s/p0lK79RvnUGvLPu' target='_blank'><img role='presentation' height='25' src={linkIcon}></img></a></td>
+              </tr>
+              <tr style={{cursor: "pointer"}} >
+                <td><strong>D1.3</strong></td>
+                <td>Project identity manual</td>
+                <td><a href='https://b2drop.eudat.eu/s/m8PEgm00NffvwSy' target='_blank'><img role='presentation' height='25' src={linkIcon}></img></a></td>
               </tr>
             </tbody>
           </Table>
