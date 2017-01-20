@@ -17,10 +17,13 @@ import milan from '../data/images/team/milan_antonovic.jpg'
 import mirko from '../data/images/team/mirko_cardoso.jpg'
 import daniele from '../data/images/team/daniele_strigaro.png'
 import rangajeewa from '../data/images/team/rangajeewa_ratnayak.jpg'
+import prasad from '../data/images/team/prasad_dananjaya_bandara.jpg'
+import mahanama from '../data/images/team/p_k_s_mahanama.jpg'
+import sudantha from '../data/images/team/b_h_sudantha.jpg'
 import emeshi from '../data/images/team/emeshi_warusavitharana.jpg'
 import imran from '../data/images/team/imran_shahid.jpg'
 import oka from '../data/images/team/oka.jpg'
-import noImage from '../data/images/team/no-image.png'
+// import noImage from '../data/images/team/no-image.png'
 import contacts from '../data/images/background/contacts.jpg'
 //css
 import '../css/people.css';
@@ -124,7 +127,7 @@ const People = React.createClass({
         role: 'Principal investigator',
         partner: 'UOM',
         address: <p>University of Moratuwa,<br/><em>Colombo, Sri Lanka</em></p>,
-        avatar: noImage,
+        avatar: mahanama,
         description: <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         Donec mattis pretium massa. Aliquam erat volutpat. Nulla facilisi.
         Donec vulputate interdum sollicitudin. Nunc lacinia auctor quam sed pellentesque.
@@ -132,21 +135,10 @@ const People = React.createClass({
       },
       {
         name: 'B.H. Sudantha',
-        role: 'Hardware expert',
+        role: 'Senior Lecturer',
         partner: 'UOM',
         address: <p>University of Moratuwa,<br/><em>Colombo, Sri Lanka</em></p>,
-        avatar: noImage,
-        description: <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        Donec mattis pretium massa. Aliquam erat volutpat. Nulla facilisi.
-        Donec vulputate interdum sollicitudin. Nunc lacinia auctor quam sed pellentesque.
-        Aliquam dui mauris, mattis quis lacus id, pellentesque lobortis odio.</p>
-      },
-      {
-        name: 'P.M.W.P. Kumara',
-        role: 'Hydrologist',
-        partner: 'UOM',
-        address: <p>University of Moratuwa,<br/><em>Colombo, Sri Lanka</em></p>,
-        avatar: noImage,
+        avatar: sudantha,
         description: <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         Donec mattis pretium massa. Aliquam erat volutpat. Nulla facilisi.
         Donec vulputate interdum sollicitudin. Nunc lacinia auctor quam sed pellentesque.
@@ -157,7 +149,7 @@ const People = React.createClass({
         role: 'Research assistant',
         partner: 'UOM',
         address: <p>University of Moratuwa,<br/><em>Colombo, Sri Lanka</em></p>,
-        avatar: noImage,
+        avatar: prasad,
         description: <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         Donec mattis pretium massa. Aliquam erat volutpat. Nulla facilisi.
         Donec vulputate interdum sollicitudin. Nunc lacinia auctor quam sed pellentesque.
