@@ -13,6 +13,11 @@ import Twitter from '../data/icons/twitter.svg'
 import GitHub from '../data/icons/github-logo.svg'*/
 import maxi from '../data/images/team/massimiliano_cannata.jpg'
 import marcus from '../data/images/team/marcus_hoffmann.jpg'
+import daniele from '../data/images/team/daniele_strigaro.png'
+import rangajeewa from '../data/images/team/rangajeewa_ratnayak.jpg'
+import emeshi from '../data/images/team/emeshi_warusavitharana.jpg'
+import imran from '../data/images/team/imran_shahid.jpg'
+import oka from '../data/images/team/oka.jpg'
 import noImage from '../data/images/team/no-image.png'
 import contacts from '../data/images/background/contacts.jpg'
 //css
@@ -95,7 +100,7 @@ const People = React.createClass({
         role: 'Researcher',
         partner: 'SUPSI',
         address: <p>Institute of earth sciences<br/><em>Trevano - Blocco C Via Trevano, 6952 Canobbio</em></p>,
-        avatar: noImage,
+        avatar: daniele,
         description: <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         Donec mattis pretium massa. Aliquam erat volutpat. Nulla facilisi.
         Donec vulputate interdum sollicitudin. Nunc lacinia auctor quam sed pellentesque.
@@ -106,7 +111,7 @@ const People = React.createClass({
         role: 'Director of Town and Country Planning Department',
         partner: 'UOM',
         address: <p>University of Moratuwa,<br/><em>Colombo, Sri Lanka</em></p>,
-        avatar: noImage,
+        avatar: rangajeewa,
         description: <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         Donec mattis pretium massa. Aliquam erat volutpat. Nulla facilisi.
         Donec vulputate interdum sollicitudin. Nunc lacinia auctor quam sed pellentesque.
@@ -157,11 +162,22 @@ const People = React.createClass({
         Aliquam dui mauris, mattis quis lacus id, pellentesque lobortis odio.</p>
       },
       {
+        name: 'Emeshi Warusavitharana',
+        role: 'Phd candidate',
+        partner: 'UOM',
+        address: <p>University of Moratuwa,<br/><em>Colombo, Sri Lanka</em></p>,
+        avatar: emeshi,
+        description: <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Donec mattis pretium massa. Aliquam erat volutpat. Nulla facilisi.
+        Donec vulputate interdum sollicitudin. Nunc lacinia auctor quam sed pellentesque.
+        Aliquam dui mauris, mattis quis lacus id, pellentesque lobortis odio.</p>
+      },
+      {
         name: 'Dr. Oka Karyanto',
         role: 'Principal investigator',
         partner: 'UGM',
         address: <p>University of Moratuwa,<br/><em>Colombo, Sri Lanka</em></p>,
-        avatar: noImage,
+        avatar: oka,
         description: <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         Donec mattis pretium massa. Aliquam erat volutpat. Nulla facilisi.
         Donec vulputate interdum sollicitudin. Nunc lacinia auctor quam sed pellentesque.
@@ -172,7 +188,7 @@ const People = React.createClass({
         role: 'Principal investigator',
         partner: 'IST',
         address: <p>University of Moratuwa,<br/><em>Colombo, Sri Lanka</em></p>,
-        avatar: noImage,
+        avatar: imran,
         description: <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         Donec mattis pretium massa. Aliquam erat volutpat. Nulla facilisi.
         Donec vulputate interdum sollicitudin. Nunc lacinia auctor quam sed pellentesque.
@@ -190,7 +206,49 @@ const People = React.createClass({
           <SearchInput className="search-input" onChange={this.searchUpdated} />
           <div className='team-container' >
             <Row>
-              {filteredContacts.map((contact, index) => (
+              {filteredContacts.filter((contact, index) => index<=3 ).map((contact, index) => (
+                <Col md={3} sm={6} key={'key-people-'+index}>
+                  <div className='team-member' >
+                    <img role='presentation' src={contact.avatar} width='100%' />
+                    <figcaption>
+                      <p className='member-name' style={{fontSize:'12px'}}>{contact.name}</p>
+                      <p className='designation' style={{margin:'0px'}}>{contact.surname}</p>
+                      <p style={{fontSize:'9px',margin:'0px'}}>{contact.role}</p>
+                    </figcaption>
+                  </div>
+                </Col>
+              ))}
+            </Row>
+            <Row>
+              {filteredContacts.filter((contact, index) => index>3 && index <= 7 ).map((contact, index) => (
+                <Col md={3} sm={6} key={'key-people-'+index}>
+                  <div className='team-member' >
+                    <img role='presentation' src={contact.avatar} width='100%' />
+                    <figcaption>
+                      <p className='member-name' style={{fontSize:'12px'}}>{contact.name}</p>
+                      <p className='designation' style={{margin:'0px'}}>{contact.surname}</p>
+                      <p style={{fontSize:'9px',margin:'0px'}}>{contact.role}</p>
+                    </figcaption>
+                  </div>
+                </Col>
+              ))}
+            </Row>
+            <Row>
+              {filteredContacts.filter((contact, index) => index>7 && index <= 11 ).map((contact, index) => (
+                <Col md={3} sm={6} key={'key-people-'+index}>
+                  <div className='team-member' >
+                    <img role='presentation' src={contact.avatar} width='100%' />
+                    <figcaption>
+                      <p className='member-name' style={{fontSize:'12px'}}>{contact.name}</p>
+                      <p className='designation' style={{margin:'0px'}}>{contact.surname}</p>
+                      <p style={{fontSize:'9px',margin:'0px'}}>{contact.role}</p>
+                    </figcaption>
+                  </div>
+                </Col>
+              ))}
+            </Row>
+            <Row>
+              {filteredContacts.filter((contact, index) => index > 11 ).map((contact, index) => (
                 <Col md={3} sm={6} key={'key-people-'+index}>
                   <div className='team-member' >
                     <img role='presentation' src={contact.avatar} width='100%' />
