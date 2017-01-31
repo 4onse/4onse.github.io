@@ -26,6 +26,11 @@ const Results = React.createClass({
                 <th>Link</th>
               </tr>
               <tr style={{cursor: "pointer"}} >
+                <td><strong>D1.1</strong></td>
+                <td>Detailed dissemination plan</td>
+                <td><a href='https://b2drop.eudat.eu/s/sEGJ6jxZlUi0Pdd' target='_blank'><img role='presentation' height='25' src={linkIcon}></img></a></td>
+              </tr>
+              <tr style={{cursor: "pointer"}} >
                 <td><strong>D1.2</strong></td>
                 <td>Target stakeholder list</td>
                 <td><a href='https://b2drop.eudat.eu/s/p0lK79RvnUGvLPu' target='_blank'><img role='presentation' height='25' src={linkIcon}></img></a></td>
