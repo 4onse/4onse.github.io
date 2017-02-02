@@ -28,7 +28,9 @@ import '../css/home.css'
 
 const Home = React.createClass({
   componentDidMount () {
-    window.twttr.widgets.load()
+    window.twttr.widgets.load(
+      document.getElementById("twitter-container")
+    )
   },
   handleButtonClick (value, event) {
     if (value==='partners') {
@@ -156,7 +158,9 @@ const Home = React.createClass({
               </Col>
             </Col>
             <Col md={2} style={{maxHeight: '218px', padding:'0px', overflowY: 'auto'}}>
-              <a className="twitter-timeline" href="https://twitter.com/SNSF_4onse"></a>
+              <div id='twitter-container'>
+                <a className="twitter-timeline" href="https://twitter.com/SNSF_4onse"></a>
+              </div>
             </Col>
           </Row>
         </Grid>
