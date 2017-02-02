@@ -13,11 +13,11 @@ import Carousel from 'react-bootstrap/lib/Carousel'
 import RaisedButton from 'material-ui/RaisedButton';
 
 // icons
-import pageTop from '../data/images/background/page-top.jpg'
-import aboutUs from '../data/images/background/about-us.jpg'
-import objective from '../data/images/background/objective.jpg'
-import desired from '../data/images/background/desired.png'
-import partners from '../data/images/background/partners.jpg'
+import pageTop from '../data/images/background/page-top_scaled.jpg'
+import aboutUs from '../data/images/background/about-us_scaled.jpg'
+import objective from '../data/images/background/objective_scaled.jpg'
+import desired from '../data/images/background/desired_scaled.jpg'
+import partners from '../data/images/background/partners_scaled.jpg'
 import openSoftware from '../data/images/team/open-software.svg'
 import openHardware from '../data/images/team/open-hardware.svg'
 import openStandard from '../data/images/team/open-standard.svg'
