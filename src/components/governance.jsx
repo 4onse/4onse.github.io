@@ -74,7 +74,7 @@ const Governance = React.createClass({
                     <br/>LSG Members are:
                   </p>
                   <ul>
-                    <li>S. Mohanarajah Cannata (Irrigation Department)</li>
+                    <li>S. Mohanarajah (Irrigation Department)</li>
                     <li>H.G.M. Kulasinghe (Irrigation Department)</li>
                     <li>S.M.M.R.K. Saurakoon (Irrigation Department)</li>
                     <li>Dr. (Ms) Soumya Balasubramanya Ratnayake (International Water Management Institute )</li>
