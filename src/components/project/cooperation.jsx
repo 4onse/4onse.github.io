@@ -3,7 +3,7 @@ import React from 'react'
 //material ui
 import Divider from 'material-ui/Divider';
 //images
-import part from '../../data/images/background/partecipate_scaled.jpg'
+import part from '../../data/images/background/partecipate_.jpg'
 
 const Cooperation = React.createClass({
   render () {
