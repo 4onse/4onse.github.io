@@ -49,10 +49,10 @@ const Home = React.createClass({
     let styleCarouselItemImg
     if (this.props.size.width>=992) {
       heightCarousel = ((992/1.77)-((992*20)/100))
-      styleCarouselItemImg = {width: '100%', transform: 'translate(0,-20%)'}
+      styleCarouselItemImg = {width: '100%', transform: 'translate(0,-30%)'}
     } else if (this.props.size.width>=750) {
       heightCarousel = ((992/1.77)-((992*20)/100))
-      styleCarouselItemImg = {width: '100%', transform: 'translate(0,-20%)'}
+      styleCarouselItemImg = {width: '100%', transform: 'translate(0,-30%)'}
     } else {
       heightCarousel = (this.props.size.width/1.77)
       styleCarouselCaption.fontSize = '12px'

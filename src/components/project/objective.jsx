@@ -3,7 +3,7 @@ import React from 'react'
 //material ui
 import Divider from 'material-ui/Divider';
 //images
-import aboutUs from '../../data/images/background/objective.jpg'
+import aboutUs from '../../data/images/background/objective_.jpg'
 
 const Objective = React.createClass({
   render () {

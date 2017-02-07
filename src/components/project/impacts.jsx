@@ -3,7 +3,7 @@ import React from 'react'
 //material ui
 import Divider from 'material-ui/Divider';
 //images
-import desired from '../../data/images/background/desired.png'
+import desired from '../../data/images/background/desired_.jpg'
 
 const Impacts = React.createClass({
   render () {

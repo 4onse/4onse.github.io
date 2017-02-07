@@ -3,7 +3,7 @@ import React from 'react'
 //material ui
 import Divider from 'material-ui/Divider';
 //images
-import aboutUs from '../../data/images/background/about-us.jpg'
+import aboutUs from '../../data/images/background/about-us_.jpg'
 
 const Background = React.createClass({
   render () {

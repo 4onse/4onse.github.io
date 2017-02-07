@@ -24,7 +24,7 @@ import emeshi from '../data/images/team/emeshi_warusavitharana.jpg'
 import imran from '../data/images/team/imran_shahid.jpg'
 import oka from '../data/images/team/oka.jpg'
 // import noImage from '../data/images/team/no-image.png'
-import contacts from '../data/images/background/contacts.jpg'
+// import contacts from '../data/images/background/contacts.jpg'
 //css
 import '../css/people.css';
 const KEYS_TO_FILTERS = ['name', 'partner', 'role']
@@ -37,7 +37,7 @@ const People = React.createClass({
     this.setState({searchTerm: term})
   },
   render () {
-    let heightCarousel
+    /*let heightCarousel
     if (this.props.size.width>=992) {
       heightCarousel = ((992/1.77)-((992*20)/100))
     } else if (this.props.size.width>=750) {
@@ -50,7 +50,7 @@ const People = React.createClass({
       backgroundPosition:'center',
       height:((heightCarousel*3)/4)+'px'
     }
-    /*let styleSocial = {
+    let styleSocial = {
       maxHeight: '25px',
       maxWidth: '25px',
       margin: '3px'
@@ -193,7 +193,7 @@ const People = React.createClass({
     const filteredContacts = contactsData.filter(createFilter(this.state.searchTerm, KEYS_TO_FILTERS))
     return (
       <div id='page-top'>
-        <div style={styleCarouselItem}></div>
+        {/*<div style={styleCarouselItem}></div>*/}
         <div className='container' style={{paddingBottom: '10px'}}>
           <h2 className='title-page'>Contact</h2>
           <Divider />

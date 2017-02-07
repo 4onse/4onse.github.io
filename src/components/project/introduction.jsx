@@ -3,7 +3,7 @@ import React from 'react'
 //material ui
 import Divider from 'material-ui/Divider';
 //images
-import pageTop from '../../data/images/background/page-top.jpg'
+import pageTop from '../../data/images/background/page-top_.jpg'
 
 const Introduction = React.createClass({
   render () {
