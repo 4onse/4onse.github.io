@@ -31,6 +31,7 @@ import Advisoryboard from './components/advisoryboard'
 import Presentations from './components/presentations';
 import Videos from './components/videos';
 import Materials from './components/materials';
+import Newsletters from './components/newsletters';
 import Workingpackages from './components/workingpackages';
 import Governance from './components/governance';
 import Casestudy from './components/casestudy';
@@ -59,6 +60,7 @@ ReactDOM.render(
         <Route path='presentations' component={Presentations} />
         <Route path='videos' component={Videos} />
         <Route path='materials' component={Materials} />
+        <Route path='newsletters' component={Newsletters} />
         <Route path='results' component={Results} />
         <Route path='links' component={LinkPage} />
         <Route path='calendar' component={Calendar} />

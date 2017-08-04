@@ -249,8 +249,8 @@ const AppToolbar = React.createClass({
               />
               <ListItem
                 leftIcon={<NotificationSync />}
-                primaryText="Cooperation"
-                onClick={this.handleClick.bind(this, this.props.location, '/cooperation')}
+                primaryText="Join-us"
+                onClick={this.handleClick.bind(this, this.props.location, '/join-us')}
               />
               <ListItem
                 leftIcon={<ActionBookmarkBorder />}
@@ -326,10 +326,11 @@ const AppToolbar = React.createClass({
                 <MenuItem style={styles.textMenu} onClick={this.handleClick.bind(this, this.props.location, '/presentations')} primaryText="Presentations" />
                 <MenuItem style={styles.textMenu} onClick={this.handleClick.bind(this, this.props.location, '/videos')} primaryText="Videos" />
                 <MenuItem style={styles.textMenu} onClick={this.handleClick.bind(this, this.props.location, '/materials')} primaryText="Materials" />
+                <MenuItem style={styles.textMenu} onClick={this.handleClick.bind(this, this.props.location, '/newsletters')} primaryText="Newsletters" />
               </IconMenu>
               <FlatButton labelStyle={styles.textMenu} onTouchTap={this.handleOpenMenuOutreach} label="Outreach" />
               <FlatButton labelStyle={styles.textMenu} onClick={this.handleClick.bind(this, this.props.location, '/results')} label="Results" />
-              <FlatButton labelStyle={styles.textMenu} onClick={this.handleClick.bind(this, this.props.location, '/cooperation')} label="Cooperation" />
+              <FlatButton labelStyle={styles.textMenu} onClick={this.handleClick.bind(this, this.props.location, '/cooperation')} label="Join-us" />
               <Button onTouchTap={this.handleClick.bind(this, this.props.location, '/links')} style={{backgroundImage:'none',border:'0'}}><Glyphicon glyph="link" /></Button>
             </div>
           </div>

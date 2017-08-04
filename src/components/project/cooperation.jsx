@@ -24,23 +24,33 @@ const Cooperation = React.createClass({
       <div id='partecipate'>
         <div style={styleCarouselItem}></div>
         <div className='container'>
-          <h2 className='title-page'>Cooperation</h2>
+          <h2 className='title-page'>Join-us: became a testing partner</h2>
           <Divider />
           <p className='paragraph'>
-            After reading the <a href="4onseInformationSheet.pdf"> Information Sheet </a> fill the Form below to became a testing partner. </p>
-
+            <big>
+            4onse is a fully Open project where everyone’s contribution is more the welcome 
+            and considered very valuable !!!</big></p>
+            
           <p className='paragraph'>
-            A testing partner agree to:
+            <strong><big>Become a testing partner</big></strong><br></br>
+            If you feel to participate in the effort of building and testing non-conventional
+            monitoring system for strengthen sustainable data production and management for
+            sustainable development subscribe using the form below after reading the 
+            <a href="4onseInformationSheet.pdf"> Information Sheet </a> fill the Form below to.
+            </p>
+          
+           <p className='paragraph'> 
+            A testing partner:
             <ul>
-                <li>participate on his own cost to the experiment</li>
-                <li>deploy the 4ONSE station system following the project outcomes (manuals, instructions, components, etc.)</li>
-                <li>monitor the system, share the data and provide feedbacks</li>
+                <li>has prior access to the project outcomes (documentation, tutorials, 
+            source code, etc...)</li>
+                <li>participates on his own cost to the experiment</li>
+                <li>deploys the 4ONSE station system following the project outcomes (manuals, instructions, components, etc.)</li>
+                <li>maintains the system, shares the data and provides feedbacks</li>
             </ul>
                 Of course it is based on voluntary work and no mandatory action is requested.
           </p>
-          <p className='paragraph'>
-            As a result, testing partners will have access to project outcomes, materials and will acquire competence also trough public acknowledgement and recognition of its scientific contribution.
-          </p>
+          
           <iframe src="https://docs.google.com/forms/d/1l0Wey8-580JLLwOotQvfXOvwIdaCjFsRJPwe7VEWHRU/viewform?embedded=true"
 					  width="100%"
 					  height="1631"
