@@ -32,7 +32,7 @@ const Results = React.createClass({
               <tr style={{cursor: "pointer"}} >
                 <td><strong>#1</strong></td>
                 <td>August 2017</td>
-                <td><a href='https://b2drop.eudat.eu/s/zudDIKZ7geSemIG' target='_blank'><img role='presentation' height='25' src={linkIcon}></img></a></td>
+                <td><a href='https://b2drop.eudat.eu/s/PvySqbrCM9KnsI3' target='_blank'><img role='presentation' height='25' src={linkIcon}></img></a></td>
               </tr>
               
             </tbody>
