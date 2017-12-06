@@ -1,0 +1,306 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Buck converter soldering &#8212; Requests 2.18.3 documentation</title>
+    <link rel="stylesheet" href="../../../../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../../../',
+        VERSION:     '2.18.3',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="../../../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../../../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../search.html" />
+   
+  <link rel="stylesheet" href="../../../../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head>
+  <body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="buck-converter-soldering">
+<span id="converter-dev"></span><h1>Buck converter soldering<a class="headerlink" href="#buck-converter-soldering" title="Permalink to this headline">¶</a></h1>
+<p>This is a short guide where you will be able to solder the buck converter.
+Follow these steps:</p>
+<ol class="arabic">
+<li><p class="first">Prepare four cables (two black and two red) with a length of about 2.5 cm
+and spell them.</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="100%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference external" href="../../../../_static/converter/cable.jpg"><img alt="cable" src="../../../../_images/cable.jpg" style="width: 25%;" /></a></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li><p class="first">Solder the cable terminations</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="100%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference external" href="../../../../_static/converter/cable_soldered.jpg"><img alt="cable_soldered" src="../../../../_images/cable_soldered.jpg" style="width: 25%;" /></a></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li><p class="first">Take the buck converter, insert the cables into the holes and solder them
+from the backside</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="33%" />
+<col width="68%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference external" href="../../../../_static/converter/converter.jpg"><img alt="converter" src="../../../../_images/converter.jpg" style="width: 25%;" /></a></td>
+<td><a class="reference external" href="../../../../_static/converter/converter_soldered_back.jpg"><img alt="converter_soldered_back" src="../../../../_images/converter_soldered_back.jpg" style="width: 25%;" /></a></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Insert the red cables in the holes with the '+',
+black cables in the holes with the '-'</p>
+</div>
+</li>
+<li><p class="first">In the following figure there is the final result</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="100%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference external" href="../../../../_static/converter/converter_soldered.jpg"><img alt="converter_soldered" src="../../../../_images/converter_soldered.jpg" style="width: 25%;" /></a></td>
+</tr>
+</tbody>
+</table>
+</li>
+</ol>
+</div>
+<div class="section" id="buck-converter-calibration">
+<h1>Buck converter calibration<a class="headerlink" href="#buck-converter-calibration" title="Permalink to this headline">¶</a></h1>
+<p>When the converters are soldered with the cables, you can start to configure them
+according to the voltage needed.</p>
+<p>The weather station needs two buck converters both powered by <strong>12 Volts</strong>. One must provide <strong>7 Volts</strong> and the other <strong>5 Volts</strong> as output voltage.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">In the following steps you will be able to set the buck converter with a voltage of 7V.
+Please, use the same steps to set the other converter with an output currrent of 5V.</p>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Be careful. The buck converter must not be wired to any internal/external
+components during the calibration</p>
+</div>
+<p>Follow these steps:</p>
+<ol class="arabic">
+<li><p class="first">Connect the converter to a power supply. In the figure below the green and
+white calbles come from a power adapter which provides 12V DC.</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="100%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference external" href="../../../../_static/converter/converter_powered.jpg"><img alt="converter_powered" src="../../../../_images/converter_powered.jpg" style="width: 25%;" /></a></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li><p class="first">Use the multimeter to check the input voltage (12V)</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="100%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference external" href="../../../../_static/converter/check_input_voltage.jpg"><img alt="check_input_voltage" src="../../../../_images/check_input_voltage.jpg" style="width: 25%;" /></a></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li><p class="first">Use the multimeter to check the output voltage (7V).
+To make the voltage output higher, use a screwer to turn right the brass screw.
+On the contrary turn left to make the output voltage lower.</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="100%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference external" href="../../../../_static/converter/converter_screw.jpg"><img alt="converter_screw" src="../../../../_images/converter_screw.jpg" style="width: 25%;" /></a></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li><p class="first">The converter is calibrated, when the voltage on the multimeter reaches the 7V.</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="100%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference external" href="../../../../_static/converter/converter_7v.jpg"><img alt="converter_7v" src="../../../../_images/converter_7v.jpg" style="width: 25%;" /></a></td>
+</tr>
+</tbody>
+</table>
+</li>
+</ol>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper"><p class="logo">
+  <a href="../../../../index.html">
+    <img class="logo" src="../../../../_static/4ONSE_logo.png" title="https://kennethreitz.org/tattoos"/>
+  </a>
+</p>
+<!--
+<p>
+<iframe src="http://ghbtns.com/github-btn.html?user=istsos&repo=istsos2&type=watch&count=true&size=large"
+  allowtransparency="true" frameborder="0" scrolling="0" width="200px" height="35px"></iframe>
+</p>
+-->
+<p>
+  4onse is a research project aimed at evaluating non-conventional monitoring systems to empower
+  low-income economies with environmental data production and support risk reduction.
+</p>
+
+<h3>Stay Informed</h3>
+<p>Receive updates on new releases and upcoming projects.</p>
+
+<p><a target='_blank' href="http://tinyletter.com/4onse">Join Mailing List</a>.</p>
+
+<p><a target='_blank' href="http://www.4onse.ch">Visit the website</a>.</p>
+<p>
+  <a href="https://www.facebook.com/Four-times-Open-Non-conventional-system-for-Sensing-the-Environment-150625125418458/" target='_blank' class="facebook-follow-button" data-show-count="false">Follow us on Facebook</a>
+  <a href="https://twitter.com/SNSF_4onse" target='_blank' class="twitter-follow-button" data-show-count="false">Follow @SNSF_4onse</a>
+  <a href="https://github.com/4onse" target='_blank' class="github-follow-button" data-show-count="false">Contribute on GitHub.</a>
+  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+  </script>
+</p>
+
+<h3>Other Projects</h3>
+
+<ul>
+    <li><a href="http://istsos.org/">istSOS</a></li>
+    <li><a href="https://github.com/istSOS">OAT</a></li>
+    <li><a href="http://www.osgeo.org/">OSGeo</a></li>
+</ul>
+
+<h3>Navigation</h3>
+<ul class="footer_nav">
+</ul>
+  <h3><a href="../../../../index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Buck converter soldering</a></li>
+<li><a class="reference internal" href="#buck-converter-calibration">Buck converter calibration</a></li>
+</ul>
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../../../../index.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../../../../search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script><!-- Alabaster (krTheme++) Hacks -->
+
+<!-- CSS Adjustments (I'm very picky.) -->
+<style type="text/css">
+
+  /* Rezzy requires precise alignment. */
+  img.logo {margin-left: -20px!important;}
+
+  /* "Quick Search" should be capitalized. */
+  div#searchbox h3 {text-transform: capitalize;}
+
+  /* Make the document a little wider, less code is cut-off. */
+  div.document {width: 1008px;}
+
+  /* Much-improved spacing around code blocks. */
+  div.highlight pre {padding: 11px 14px;}
+
+  /* Remain Responsive! */
+  @media screen and (max-width: 1008px) {
+    div.sphinxsidebar {display: none;}
+    div.document {width: 100%!important;}
+
+    /* Have code blocks escape the document right-margin. */
+    div.highlight pre {margin-right: -30px;}
+  }
+
+</style>
+
+<!-- Analytics tracking for Kenneth. -->
+<script type="text/javascript">
+  var _gauges = _gauges || [];
+  (function() {
+    var t   = document.createElement('script');
+    t.type  = 'text/javascript';
+    t.async = true;
+    t.id    = 'gauges-tracker';
+    t.setAttribute('data-site-id', '56ca7a57c88d9011080024dd');
+    t.setAttribute('data-track-path', 'https://track.gaug.es/track.gif');
+    t.src = 'https://d36ee2fcip1434.cloudfront.net/track.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(t, s);
+  })();
+</script>
+
+<!-- There are no more hacks. -->
+<!--         இڿڰۣ-ڰۣ—         -->
+<!--   Love, Kenneth Reitz    -->
+
+<script src="../../../../_static//konami.js"></script>
+<script>
+  var easter_egg = new Konami('http://fortunes.herokuapp.com/random/raw');
+</script>
+
+<!-- That was not a hack. That was art. -->
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;MMXVII. <a href="http://www.supsi.ch/ist">Istituto Scienze della Terra</a>.
+      
+    </div>
+
+    
+    <a href="https://github.com/4onse/4onse-doc" class="github">
+        <img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub"  class="github"/>
+    </a>
+    
+
+    
+  </body>
+</html>

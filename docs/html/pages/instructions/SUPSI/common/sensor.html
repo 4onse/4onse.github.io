@@ -1,0 +1,326 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Sensor instruction &#8212; Requests 2.18.3 documentation</title>
+    <link rel="stylesheet" href="../../../../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../../../',
+        VERSION:     '2.18.3',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="../../../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../../../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../search.html" />
+    <link rel="next" title="istSOS configuration" href="code.html" />
+    <link rel="prev" title="Setting up the control unit" href="../user/control.html" />
+   
+  <link rel="stylesheet" href="../../../../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head>
+  <body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="sensor-instruction">
+<span id="sensor-dev"></span><h1>Sensor instruction<a class="headerlink" href="#sensor-instruction" title="Permalink to this headline">¶</a></h1>
+<p>Now, we are going to prepare the connections between the control unit and the sensors.
+The image below can help you in the hookup of the sensors.</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="100%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference external" href="../../../../_static/instructions/hookup_sensors.png"><img alt="hookup_sensors" src="../../../../_images/hookup_sensors.png" style="width: 70%;" /></a></td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="ds18b20">
+<h2>DS18B20<a class="headerlink" href="#ds18b20" title="Permalink to this headline">¶</a></h2>
+<p>The temperature sensor usually comes with a cable length of about 90 cm.
+You may need to extend the calble to fit to the distance between the
+main box installation and the place where you will install the temperature sensor.
+We generally extend it with a 1.5 meter cable by soldering.</p>
+<p>From DS18B20 to connector:</p>
+<ul class="simple">
+<li>GND (black) --&gt; M05 (black)</li>
+<li>VIN (red) --&gt; M06 (red)</li>
+<li>DATA (blue or yellow) --&gt; M07 (blue) --&gt;  D9 (Arduino PIN)</li>
+</ul>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p>The <strong>DS18B20</strong> needs a <strong>4.7 kΩ</strong> resistor between the data (yellow or blue)
+and the VIN (red) cable. You can solder it or plug and lock it directly in the
+terminal block.</p>
+<table border="1" class="last docutils">
+<colgroup>
+<col width="100%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference external" href="../../../../_static/sensors/ds18b20_wired.jpg"><img alt="ds18b20_wired" src="../../../../_images/ds18b20_wired.jpg" style="width: 25%;" /></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="section" id="bme280">
+<h2>BME280<a class="headerlink" href="#bme280" title="Permalink to this headline">¶</a></h2>
+<p>This sensor uses the I2C (<a class="reference external" href="https://en.wikipedia.org/wiki/I%C2%B2C">link</a>) connection. It needs 5V as input voltage.
+Use a <em>4 core cable</em> to connect the sensor breakout board and the control unit.</p>
+<p>From BME280 to connector:</p>
+<ul class="simple">
+<li>GND (black) --&gt; M09 (black)</li>
+<li>5V or VIN or VCC (red) --&gt; M10 (red)</li>
+<li>SDI or SDA (green) --&gt; M11 (green) --&gt; SDA (Arduino PIN)</li>
+<li>SCK or SCL (white) --&gt; M12 (white) --&gt; SCL (Arduino PIN)</li>
+</ul>
+<table border="1" class="docutils">
+<colgroup>
+<col width="100%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference external" href="../../../../_static/sensors/BME280_pinout.jpg"><img alt="BME280_pinout" src="../../../../_images/BME280_pinout.jpg" style="width: 25%;" /></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="bh1750">
+<h2>BH1750<a class="headerlink" href="#bh1750" title="Permalink to this headline">¶</a></h2>
+<p>This sensor uses the I2C connection.
+Use a <em>4 core cable</em> to connect the sensor breakout board and the control unit.</p>
+<p>From BH1750 to connector:</p>
+<ul class="simple">
+<li>GND (black) --&gt; M15 (black)</li>
+<li>5V or VIN or VCC (red) --&gt; M16 (red)</li>
+<li>SDI or SDA (green) --&gt; M13 (green) --&gt; SDA (Arduino PIN)</li>
+<li>SCK or SCL (white) --&gt; M14 (white) --&gt; SCL (Arduino PIN)</li>
+</ul>
+<table border="1" class="docutils">
+<colgroup>
+<col width="100%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference external" href="../../../../_static/sensors/BH1750_pinout.jpg"><img alt="BH1750_pinout" src="../../../../_images/BH1750_pinout.jpg" style="width: 25%;" /></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="rain-collector">
+<h2>RAIN COLLECTOR<a class="headerlink" href="#rain-collector" title="Permalink to this headline">¶</a></h2>
+<p>The rain sensor DAVIS Aerocone 6465 has a RJ11 connector. If you do not have
+an adapter cut it and prepare the connection as follow.</p>
+<p>From Davis AeroCone to connector (terminal block barrier):</p>
+<ul class="simple">
+<li>DATA1 (red) --&gt; M20 (black)</li>
+<li>DATA2 (green or yellow) --&gt; M19 (blue) --&gt; D2 (Arduino PIN)</li>
+</ul>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">The <strong>rain collector</strong> needs a <strong>47 Ω</strong> resistor between the data (green or yellow)
+and the VIN (red) input connector of the M22.</p>
+</div>
+</div>
+<div class="section" id="anemometer">
+<h2>ANEMOMETER<a class="headerlink" href="#anemometer" title="Permalink to this headline">¶</a></h2>
+<p>The anemometer, which is composed by wind direction and speed, has the
+following pinout from anemometer to terminal block barrier:</p>
+<ul class="simple">
+<li>GND and 5V (black and red) --&gt; M21 (black)</li>
+<li>speed data (yellow) --&gt; M24 (blue) --&gt; D3 (Arduino PIN)</li>
+<li>direction data (green) --&gt; M23 (yellow) --&gt; A0 (Arduino PIN)</li>
+</ul>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">The <strong>wind direction</strong> needs a <strong>10 kΩ</strong> resistor between the data (green)
+and the VIN (red) input connector of the M22.
+The <strong>wind speed</strong> needs a <strong>47 Ω</strong> resistor between the data (yellow)
+and the VIN (red) input connector of the M22.</p>
+</div>
+<table border="1" class="docutils">
+<colgroup>
+<col width="100%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference external" href="../../../../_static/sensors/WIND_pinout.jpg"><img alt="wind_pinout" src="../../../../_images/WIND_pinout.jpg" style="width: 25%;" /></a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Go to</strong> <a class="reference internal" href="code.html#code"><span class="std std-ref">istSOS configuration</span></a></p>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper"><p class="logo">
+  <a href="../../../../index.html">
+    <img class="logo" src="../../../../_static/4ONSE_logo.png" title="https://kennethreitz.org/tattoos"/>
+  </a>
+</p>
+<!--
+<p>
+<iframe src="http://ghbtns.com/github-btn.html?user=istsos&repo=istsos2&type=watch&count=true&size=large"
+  allowtransparency="true" frameborder="0" scrolling="0" width="200px" height="35px"></iframe>
+</p>
+-->
+<p>
+  4onse is a research project aimed at evaluating non-conventional monitoring systems to empower
+  low-income economies with environmental data production and support risk reduction.
+</p>
+
+<h3>Stay Informed</h3>
+<p>Receive updates on new releases and upcoming projects.</p>
+
+<p><a target='_blank' href="http://tinyletter.com/4onse">Join Mailing List</a>.</p>
+
+<p><a target='_blank' href="http://www.4onse.ch">Visit the website</a>.</p>
+<p>
+  <a href="https://www.facebook.com/Four-times-Open-Non-conventional-system-for-Sensing-the-Environment-150625125418458/" target='_blank' class="facebook-follow-button" data-show-count="false">Follow us on Facebook</a>
+  <a href="https://twitter.com/SNSF_4onse" target='_blank' class="twitter-follow-button" data-show-count="false">Follow @SNSF_4onse</a>
+  <a href="https://github.com/4onse" target='_blank' class="github-follow-button" data-show-count="false">Contribute on GitHub.</a>
+  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+  </script>
+</p>
+
+<h3>Other Projects</h3>
+
+<ul>
+    <li><a href="http://istsos.org/">istSOS</a></li>
+    <li><a href="https://github.com/istSOS">OAT</a></li>
+    <li><a href="http://www.osgeo.org/">OSGeo</a></li>
+</ul>
+
+<h3>Navigation</h3>
+<ul class="footer_nav">
+      <li class="prev">
+        <p>Previous topic: <a href="../user/control.html">Setting up the control unit</a></p>
+      </li>
+      <li class="next">
+        <p>Next topic: <a href="code.html">istSOS configuration</a></p>
+      </li>
+</ul>
+  <h3><a href="../../../../index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Sensor instruction</a><ul>
+<li><a class="reference internal" href="#ds18b20">DS18B20</a></li>
+<li><a class="reference internal" href="#bme280">BME280</a></li>
+<li><a class="reference internal" href="#bh1750">BH1750</a></li>
+<li><a class="reference internal" href="#rain-collector">RAIN COLLECTOR</a></li>
+<li><a class="reference internal" href="#anemometer">ANEMOMETER</a></li>
+</ul>
+</li>
+</ul>
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../../../../index.html">Documentation overview</a><ul>
+  <li><a href="../user/index.html">4onse-mod weather station</a><ul>
+  <li><a href="../user/instructions.html">Instructions</a><ul>
+      <li>Previous: <a href="../user/control.html" title="previous chapter">Setting up the control unit</a></li>
+      <li>Next: <a href="code.html" title="next chapter">istSOS configuration</a></li>
+  </ul></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../../../../search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script><!-- Alabaster (krTheme++) Hacks -->
+
+<!-- CSS Adjustments (I'm very picky.) -->
+<style type="text/css">
+
+  /* Rezzy requires precise alignment. */
+  img.logo {margin-left: -20px!important;}
+
+  /* "Quick Search" should be capitalized. */
+  div#searchbox h3 {text-transform: capitalize;}
+
+  /* Make the document a little wider, less code is cut-off. */
+  div.document {width: 1008px;}
+
+  /* Much-improved spacing around code blocks. */
+  div.highlight pre {padding: 11px 14px;}
+
+  /* Remain Responsive! */
+  @media screen and (max-width: 1008px) {
+    div.sphinxsidebar {display: none;}
+    div.document {width: 100%!important;}
+
+    /* Have code blocks escape the document right-margin. */
+    div.highlight pre {margin-right: -30px;}
+  }
+
+</style>
+
+<!-- Analytics tracking for Kenneth. -->
+<script type="text/javascript">
+  var _gauges = _gauges || [];
+  (function() {
+    var t   = document.createElement('script');
+    t.type  = 'text/javascript';
+    t.async = true;
+    t.id    = 'gauges-tracker';
+    t.setAttribute('data-site-id', '56ca7a57c88d9011080024dd');
+    t.setAttribute('data-track-path', 'https://track.gaug.es/track.gif');
+    t.src = 'https://d36ee2fcip1434.cloudfront.net/track.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(t, s);
+  })();
+</script>
+
+<!-- There are no more hacks. -->
+<!--         இڿڰۣ-ڰۣ—         -->
+<!--   Love, Kenneth Reitz    -->
+
+<script src="../../../../_static//konami.js"></script>
+<script>
+  var easter_egg = new Konami('http://fortunes.herokuapp.com/random/raw');
+</script>
+
+<!-- That was not a hack. That was art. -->
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;MMXVII. <a href="http://www.supsi.ch/ist">Istituto Scienze della Terra</a>.
+      
+    </div>
+
+    
+    <a href="https://github.com/4onse/4onse-doc" class="github">
+        <img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub"  class="github"/>
+    </a>
+    
+
+    
+  </body>
+</html>

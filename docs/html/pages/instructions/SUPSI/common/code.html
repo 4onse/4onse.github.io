@@ -1,0 +1,327 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>istSOS configuration &#8212; Requests 2.18.3 documentation</title>
+    <link rel="stylesheet" href="../../../../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../../../',
+        VERSION:     '2.18.3',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="../../../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../../../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../search.html" />
+    <link rel="next" title="Solar shield instructions" href="solar_shield.html" />
+    <link rel="prev" title="Sensor instruction" href="sensor.html" />
+   
+  <link rel="stylesheet" href="../../../../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head>
+  <body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="istsos-configuration">
+<span id="code"></span><h1>istSOS configuration<a class="headerlink" href="#istsos-configuration" title="Permalink to this headline">¶</a></h1>
+<ol class="arabic">
+<li><p class="first">If you need to get information on istSOS, please refer to the istSOS <a class="reference external" href="http://istsos.org/tutorial/">tutorial</a>
+to learn what is it and how you can use it.</p>
+</li>
+<li><p class="first">Open an Internet browser and go to your istSOS server admin page and select your service</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="100%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference external" href="../../../../_static/code/service_istsos.png"><img alt="service" src="../../../../_images/service_istsos.png" style="width: 100%;" /></a></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li><p class="first">Create a new procedure clicking on the button &quot;New procedure&quot;, and add the
+observed properties in the following order:</p>
+<ul class="simple">
+<li>Internal temperature</li>
+<li>Soil humidity</li>
+<li>light</li>
+<li>pressure</li>
+<li>humidity</li>
+<li>temperature</li>
+<li>rainfall</li>
+<li>wind direction</li>
+<li>wind speed</li>
+</ul>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">To learn how to create a new observed property follow this <a class="reference external" href="http://istsos.org/en/latest/doc/register.html">link</a>.
+Even if the soil moisture is not yet included in the 4onse-mod,
+please add it into the observed properties.</p>
+</div>
+<table border="1" class="docutils">
+<colgroup>
+<col width="100%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference external" href="../../../../_static/code/procedure_istsos.png"><img alt="procedure" src="../../../../_images/procedure_istsos.png" style="width: 100%;" /></a></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li><p class="first">Fill the form and press &lt;save&gt;.</p>
+</li>
+<li><p class="first">A Sensor ID (refrred to as PROCEDURE_ID in the next section), is created
+when the procedure is saved. Please annotate or copy it since it is required in the
+next operations.</p>
+</li>
+</ol>
+</div>
+<div class="section" id="code-uploading">
+<h1>Code uploading<a class="headerlink" href="#code-uploading" title="Permalink to this headline">¶</a></h1>
+<p>Once the 4onse-mod installation is completed and the istSOS configured,
+you can connect your computer to the arduino with a USB cable and upload
+the code. This is the step-by-step procedure to follow:</p>
+<ol class="arabic">
+<li><p class="first">Format the SD card in FAT32, download this <a class="reference download internal" href="../../../../_downloads/4onse-ws-sd.zip" download=""><code class="xref download docutils literal"><span class="pre">archive</span></code></a>
+, extract and copy it into the SD card root.
+On the SD card you should now have the following structure:</p>
+<ul class="simple">
+<li>LOG</li>
+<li>SLOG</li>
+<li>TMP</li>
+<li>config.txt</li>
+</ul>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p>All the folders must be empty.
+The <em>config.txt</em> file has the content shown here below:</p>
+<div class="highlight-bash"><div class="highlight"><pre><span></span><span class="m">9600</span>,36,3,2,0,0,0
+baud,escape,esc#,mode,verb,echo,ignoreRX
+</pre></div>
+</div>
+<p class="last">After this step, remember to insert the micro SD card into the OpenLog
+and the SIM card into the GPRS SIM800 module.</p>
+</div>
+</li>
+<li><p class="first">If you don't have it, download and install the Arduino IDE (<a class="reference external" href="https://www.arduino.cc/en/main/software">link1</a>).
+Please remember the path where you install it.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">The Arduino IDE version must be &gt;= 1.8.3</p>
+</div>
+</li>
+<li><p class="first">The weather station code depends on the following libraries:</p>
+<ul class="simple">
+<li>RTClib by Adafruit</li>
+<li>Adafruit BME280 Library</li>
+<li>Adafruit Unified Sensor</li>
+<li>BH1750</li>
+<li>DallasTemperature</li>
+<li>DHT</li>
+</ul>
+</li>
+<li><p class="first"><a class="reference download internal" href="../../../../_downloads/4onse-ws-ist.zip" download=""><code class="xref download docutils literal"><span class="pre">Download</span> <span class="pre">the</span> <span class="pre">archive</span></code></a>
+and unzip it.</p>
+</li>
+<li><p class="first">Open the arduino IDE, go to <em>Files -&gt; Preferences</em>, and set the <em>Sketchbook</em> location
+to the project root (Es):</p>
+<div class="highlight-bash"><div class="highlight"><pre><span></span>/path/to/downloaded/package/4onse-ws/source/Arduino
+</pre></div>
+</div>
+</li>
+<li><p class="first">Load the sketch <em>stationFull.ino</em> that you find inside the folder <em>stationFull</em>,
+uncomment and set the following variable with the correct value (around line 54)
+that should be defined by your istSOS server and SIM provider.
+(see the example below):</p>
+<div class="highlight-c"><div class="highlight"><pre><span></span><span class="cp">#define SERVER &quot;istsos.org&quot;</span>
+<span class="cp">#define URI &quot;istsos/wa/istsos/services/demo/operations/fastinsert&quot;</span>
+<span class="cp">#define PROCEDURE_ID &quot;PROCEDURE_ID&quot;</span>
+<span class="cp">#define BASIC_AUTH &quot;xxxx&quot;</span>
+<span class="cp">#define APN &quot;xxxx&quot;</span>
+<span class="cp">#define APNUSER &quot;xxxx&quot;</span>
+<span class="cp">#define PASS &quot;xxxx&quot;</span>
+<span class="cp">#define SIM_PIN &quot;xxxx&quot;</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first">Compile and upload the code</p>
+</li>
+<li><p class="first">Open the Serial monitor with the Arduino IDE to check that
+everithing is working.</p>
+</li>
+<li><p class="first">Check istSOS</p>
+</li>
+<li><p class="first">You have done!</p>
+</li>
+</ol>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper"><p class="logo">
+  <a href="../../../../index.html">
+    <img class="logo" src="../../../../_static/4ONSE_logo.png" title="https://kennethreitz.org/tattoos"/>
+  </a>
+</p>
+<!--
+<p>
+<iframe src="http://ghbtns.com/github-btn.html?user=istsos&repo=istsos2&type=watch&count=true&size=large"
+  allowtransparency="true" frameborder="0" scrolling="0" width="200px" height="35px"></iframe>
+</p>
+-->
+<p>
+  4onse is a research project aimed at evaluating non-conventional monitoring systems to empower
+  low-income economies with environmental data production and support risk reduction.
+</p>
+
+<h3>Stay Informed</h3>
+<p>Receive updates on new releases and upcoming projects.</p>
+
+<p><a target='_blank' href="http://tinyletter.com/4onse">Join Mailing List</a>.</p>
+
+<p><a target='_blank' href="http://www.4onse.ch">Visit the website</a>.</p>
+<p>
+  <a href="https://www.facebook.com/Four-times-Open-Non-conventional-system-for-Sensing-the-Environment-150625125418458/" target='_blank' class="facebook-follow-button" data-show-count="false">Follow us on Facebook</a>
+  <a href="https://twitter.com/SNSF_4onse" target='_blank' class="twitter-follow-button" data-show-count="false">Follow @SNSF_4onse</a>
+  <a href="https://github.com/4onse" target='_blank' class="github-follow-button" data-show-count="false">Contribute on GitHub.</a>
+  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+  </script>
+</p>
+
+<h3>Other Projects</h3>
+
+<ul>
+    <li><a href="http://istsos.org/">istSOS</a></li>
+    <li><a href="https://github.com/istSOS">OAT</a></li>
+    <li><a href="http://www.osgeo.org/">OSGeo</a></li>
+</ul>
+
+<h3>Navigation</h3>
+<ul class="footer_nav">
+      <li class="prev">
+        <p>Previous topic: <a href="sensor.html">Sensor instruction</a></p>
+      </li>
+      <li class="next">
+        <p>Next topic: <a href="solar_shield.html">Solar shield instructions</a></p>
+      </li>
+</ul>
+  <h3><a href="../../../../index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">istSOS configuration</a></li>
+<li><a class="reference internal" href="#code-uploading">Code uploading</a></li>
+</ul>
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../../../../index.html">Documentation overview</a><ul>
+  <li><a href="../user/index.html">4onse-mod weather station</a><ul>
+  <li><a href="../user/instructions.html">Instructions</a><ul>
+      <li>Previous: <a href="sensor.html" title="previous chapter">Sensor instruction</a></li>
+      <li>Next: <a href="solar_shield.html" title="next chapter">Solar shield instructions</a></li>
+  </ul></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../../../../search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script><!-- Alabaster (krTheme++) Hacks -->
+
+<!-- CSS Adjustments (I'm very picky.) -->
+<style type="text/css">
+
+  /* Rezzy requires precise alignment. */
+  img.logo {margin-left: -20px!important;}
+
+  /* "Quick Search" should be capitalized. */
+  div#searchbox h3 {text-transform: capitalize;}
+
+  /* Make the document a little wider, less code is cut-off. */
+  div.document {width: 1008px;}
+
+  /* Much-improved spacing around code blocks. */
+  div.highlight pre {padding: 11px 14px;}
+
+  /* Remain Responsive! */
+  @media screen and (max-width: 1008px) {
+    div.sphinxsidebar {display: none;}
+    div.document {width: 100%!important;}
+
+    /* Have code blocks escape the document right-margin. */
+    div.highlight pre {margin-right: -30px;}
+  }
+
+</style>
+
+<!-- Analytics tracking for Kenneth. -->
+<script type="text/javascript">
+  var _gauges = _gauges || [];
+  (function() {
+    var t   = document.createElement('script');
+    t.type  = 'text/javascript';
+    t.async = true;
+    t.id    = 'gauges-tracker';
+    t.setAttribute('data-site-id', '56ca7a57c88d9011080024dd');
+    t.setAttribute('data-track-path', 'https://track.gaug.es/track.gif');
+    t.src = 'https://d36ee2fcip1434.cloudfront.net/track.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(t, s);
+  })();
+</script>
+
+<!-- There are no more hacks. -->
+<!--         இڿڰۣ-ڰۣ—         -->
+<!--   Love, Kenneth Reitz    -->
+
+<script src="../../../../_static//konami.js"></script>
+<script>
+  var easter_egg = new Konami('http://fortunes.herokuapp.com/random/raw');
+</script>
+
+<!-- That was not a hack. That was art. -->
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;MMXVII. <a href="http://www.supsi.ch/ist">Istituto Scienze della Terra</a>.
+      
+    </div>
+
+    
+    <a href="https://github.com/4onse/4onse-doc" class="github">
+        <img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub"  class="github"/>
+    </a>
+    
+
+    
+  </body>
+</html>

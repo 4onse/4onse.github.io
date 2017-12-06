@@ -1,0 +1,102 @@
+.. Requests documentation master file, created by
+   sphinx-quickstart on Sun Feb 13 23:54:25 2011.
+   You can adapt this file completely to your liking, but it should at least
+   contain the root `toctree` directive.
+
+Building a 4onse weather station
+==================================
+
+.. image:: https://img.shields.io/badge/time-12%20hr-green.svg
+    :target: https://saythanks.io/to/kennethreitz
+
+.. image:: https://img.shields.io/badge/cost-450%20USD-green.svg
+    :target: https://saythanks.io/to/kennethreitz
+
+.. image:: https://img.shields.io/badge/difficulty-Medium-orange.svg
+    :target: https://saythanks.io/to/kennethreitz
+
+
+
+Weather station documentation
+------------------------------
+
+This documentation aims to be a comprehensive guide to build the first official
+version of the **4onse weather station**. It contains the full documentation both
+for the hardware and the software components. Visit `<http://www.4onse.ch>`_
+for more information and contact us to help, give your feedback or ask
+specific questions.
+
+
+What is 4onse?
+--------------
+
+The **4onse** project (4 TIMES OPEN & NON-CONVENTIONAL TECHNOLOGY FOR
+SENSING THE ENVIRONMENT) is funded by the Swiss National Science
+Foundation (SNSF) in the context of the Research for Development (R4D)
+program with decision IZ07Z0_160906/1. One of the project outcames is an Environmental
+Monitoring System (EMS) based on "Open" technogies, including software, hardware,
+standard and data.
+
+Overview
+---------
+
+The proposed weather station is a cost-effective solutions that
+includes different sensors connected to the Arduino Mega 2560 board
+that manages the data collection, logging and communication trough a
+GPRS module (SIM800). Measures are automatically sent to the
+istSOS_ open platform that enable data
+management and distribution using the Sensor Observation Service (SOS_)
+open standard from the Open Geoscpatial Consortium (OGC_).
+
+The following climatic parameters are observed:
+
+* External air temperature (**DS18B20**)
+* External air humidity (**BME280**)
+* Barometric Pressure (**BME280**)
+* Precipitation (**Davis AeroCone collector**)
+* Wind speed and direction (**SEN-08942**)
+* Soil moisture (**YL-69**)
+
+.. foto complete e del box interno
+.. diverse versioni stazioni... prevedere sezionamento per diverse stazioni  supsi, tecinvent srilanka
+
+Currently, we are developing two versions based on the same components, but with different building strategies: the **4onse-mod** uses wires and connectors while **4onse-pcb** uses printed board.
+
++----+---------------------+-----------------------------+-----------------+-----------------+-------------+
+| n° | Name                | Link to manual              | Building effort | Reproducibility | Price (USD) |
++====+=====================+=============================+=================+=================+=============+
+| #1 | 4onse-mod           |  :ref:`index-supsi-user`    | 4/5             | 4/5             | xxx         |
++----+---------------------+-----------------------------+-----------------+-----------------+-------------+
+| #2 | 4onse-pcb           |  :ref:`index-uom`           | 3/5             | 3/5             | xxx         |
++----+---------------------+-----------------------------+-----------------+-----------------+-------------+
+
+.. | #3 | TECinvent           |  :ref:`index-tec`      | 2/5             | 2/5             |
+.. +----+---------------------+------------------------+-----------------+-----------------+
+
+
+Go to the guides
+----------------
+
+.. toctree::
+   :maxdepth: 1
+
+   pages/instructions/SUPSI/user/index
+   pages/instructions/UoM/index
+
+.. pages/instructions/SUPSI/dev/index
+
+
+.. pages/instructions/TECinvent/index
+
+Contribute to this documentation
+---------------------------------
+
+You can contribute to improve this documentation on
+`GitHub <https://github.com/4onse/>`_ by signaling issues or proposing changes.
+
+
+.. _istSOS: http://www.istsos.org
+
+.. _SOS: http://www.opengeospatial.org/standards/sos
+
+.. _OGC: http://www.opengeospatial.org

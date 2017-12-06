@@ -1,0 +1,362 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Design &#8212; Requests 2.18.3 documentation</title>
+    <link rel="stylesheet" href="../../../../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../../../',
+        VERSION:     '2.18.3',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="../../../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../../../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../search.html" />
+    <link rel="next" title="Instructions" href="../user/instructions.html" />
+    <link rel="prev" title="Materials" href="material.html" />
+   
+  <link rel="stylesheet" href="../../../../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head>
+  <body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <span class="target" id="design"></span><div class="section" id="id1">
+<h1>Design<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<p>The 4onse-mod station is composed by the following units:</p>
+<ul class="simple">
+<li><strong>Sensor unit</strong>: it comprises the sensors that will observe the physical
+properties to retrieve measures in time.</li>
+<li><strong>Control unit</strong>: it is the main box hosting the microprocessor and the
+tranceiver that enable the sensor readings and communication toward
+the data server.</li>
+<li><strong>Power unit</strong>: it is responsible of providing power supply to the control
+and the sensor units (both solar or power adapter systems).</li>
+<li><strong>Pole</strong>: it permits the physical deployment in the field of all the above
+units.</li>
+</ul>
+<div class="section" id="sensor-unit-components">
+<h2>Sensor unit components<a class="headerlink" href="#sensor-unit-components" title="Permalink to this headline">¶</a></h2>
+<p>The <strong>sensor unit</strong> is composed by all the external sensors which monitor the
+main environmental parameters.</p>
+<p>The <strong>DS18B20</strong> togheter with the <strong>BME280</strong> are placed inside a solar shield
+(according to the WMO dispositions) to provide temperature, humidity and
+pressure data.</p>
+<p>The <strong>rain gauge</strong>, <strong>wind speed</strong> and <strong>direction</strong> are plug and play sensors.
+They only need to be mounted on the pool and then plugged.</p>
+</div>
+<div class="section" id="control-unit">
+<h2>Control unit<a class="headerlink" href="#control-unit" title="Permalink to this headline">¶</a></h2>
+<p>The control unit is placed in a BOX which should be water and dust proof.
+Inside the box a board in plexiglass will act as support for the
+different <a class="reference internal" href="material.html#control-devices"><span class="std std-ref">Control devices</span></a></p>
+<p>The front and back hookup schema are depicted in the images below.</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="52%" />
+<col width="48%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head"><a class="reference external" href="../../../../_static/design/hookup_front.png"><img alt="hookup_front" src="../../../../_images/hookup_front.png" style="width: 100%;" /></a></th>
+<th class="head"><a class="reference external" href="../../../../_static/design/hookup_back.png"><img alt="hookup_back" src="../../../../_images/hookup_back.png" style="width: 100%;" /></a></th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Front hookup</td>
+<td>Back hookup</td>
+</tr>
+</tbody>
+</table>
+<p>The following table lists all the components that are to be mounted on a
+plexi board inside the box .</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="8%" />
+<col width="47%" />
+<col width="45%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">#</th>
+<th class="head">Sensor name</th>
+<th class="head">Photo</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>1</td>
+<td>Arduino Mega 2560</td>
+<td><a class="reference external" href="../../../../_static/components/arduino_mega.jpg"><img alt="arduino_mega" src="../../../../_images/arduino_mega.jpg" style="width: 20%;" /></a></td>
+</tr>
+<tr class="row-odd"><td>2</td>
+<td>SIM800</td>
+<td><a class="reference external" href="../../../../_static/components/sim800.png"><img alt="sim800" src="../../../../_images/sim800.png" style="width: 20%;" /></a></td>
+</tr>
+<tr class="row-even"><td>3</td>
+<td>Step-down</td>
+<td><a class="reference external" href="../../../../_static/components/step_down.jpg"><img alt="step-down" src="../../../../_images/step_down.jpg" style="width: 20%;" /></a></td>
+</tr>
+<tr class="row-odd"><td>4</td>
+<td>OpenLog</td>
+<td><a class="reference external" href="../../../../_static/components/openlog.png"><img alt="openlog" src="../../../../_images/openlog.png" style="width: 20%;" /></a></td>
+</tr>
+<tr class="row-even"><td>5</td>
+<td>DS3231</td>
+<td><a class="reference external" href="../../../../_static/components/rtc.png"><img alt="ds3231" src="../../../../_images/rtc.png" style="width: 20%;" /></a></td>
+</tr>
+<tr class="row-odd"><td>6</td>
+<td>DHT11</td>
+<td><a class="reference external" href="../../../../_static/sensors/DHT11.jpg"><img alt="dht11" src="../../../../_images/DHT11.jpg" style="width: 20%;" /></a></td>
+</tr>
+<tr class="row-even"><td>7</td>
+<td>LM393</td>
+<td><a class="reference external" href="../../../../_static/components/lm393.png"><img alt="lm393" src="../../../../_images/lm393.png" style="width: 20%;" /></a></td>
+</tr>
+</tbody>
+</table>
+<p>The <strong>#1</strong> is the <strong>Arduino</strong> board which is the main component. It is placed in
+the center of the plexi board to ease the connections with the other components.</p>
+<p>The <strong>#2</strong> is the <strong>GPRS SIM800</strong> module. It enables data transfer by mobile
+internet through an encrypted protocol transmission (HTTPS).</p>
+<p>The <strong>#3</strong> are the <strong>Step-down converter</strong> modules. They are used to linearly convert
+the power supply from 12 Volts to 5 and 7 Volts thanks to the LM2596 regulator.
+The 5 Volts current is used to power the internal and external components and
+the 7 Volts to power the Arduino board; this according to the datasheets of each components.
+They are mounted on the back side of the plexi.</p>
+<p>The <strong>#4</strong> is the <strong>OpenLog</strong> which works as a datalogger.</p>
+<p>The <strong>#5</strong> is the <strong>RTC</strong>. It is synchronized using an NTP server and it provides
+the right timestamp to the weather station observations.</p>
+<p>The <strong>#6</strong> is the <strong>DHT11</strong>. It has the function to monitor the temperature and
+humidity inside the box container.</p>
+<p>The <strong>#7</strong> is the <strong>Adapter for soil moisture sensor</strong>, it has a built-in
+potentiometer for sensitivity adjustment of the digital output.</p>
+</div>
+<div class="section" id="power-unit">
+<h2>Power unit<a class="headerlink" href="#power-unit" title="Permalink to this headline">¶</a></h2>
+<p>The weather station requires 12 Volts to work properly. It is provided either by:</p>
+<ul class="simple">
+<li>a power supply adapter</li>
+<li>or a solar power unit</li>
+</ul>
+<p>If the solar power unit is selected, we suggest to use a:</p>
+<ul class="simple">
+<li>30W Solar Panel (~ 50 USD)</li>
+<li>12V, 22Ah rechargeable battery (~ 40 USD)</li>
+<li>Solar charger/regulator (~ 15 USD)</li>
+</ul>
+</div>
+<div class="section" id="pole">
+<h2>Pole<a class="headerlink" href="#pole" title="Permalink to this headline">¶</a></h2>
+<p>The pole must guarantee solidity and should accomodate some basic position
+requirements of the sensors indicated by best practices and guidelines (e.g.: WMO).</p>
+<div class="section" id="suburban-weather-station">
+<h3>Suburban weather station<a class="headerlink" href="#suburban-weather-station" title="Permalink to this headline">¶</a></h3>
+<table border="1" class="docutils">
+<colgroup>
+<col width="14%" />
+<col width="24%" />
+<col width="62%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Sensor</th>
+<th class="head">Altitude</th>
+<th class="head">Location (suggestions)</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Temperature/humidity</td>
+<td>from 1.7 to 2 m</td>
+<td>A green field at least 10 meters away from any kind of obstacle (buildings, trees, etc.)</td>
+</tr>
+<tr class="row-odd"><td>Pluviometer</td>
+<td>from 1.5 to 2 m</td>
+<td>10 meters away from any kind of obstacle which can prevent the rain to fall inside the bucket</td>
+</tr>
+<tr class="row-even"><td>Solar radiation</td>
+<td>2 m</td>
+<td>At the top of the pole, pay attention to possible shadows which can make shade on the sensor</td>
+</tr>
+<tr class="row-odd"><td>Anemometer</td>
+<td>2/2.5 m</td>
+<td>At the top of the pole and at least 10 meters away from possible obstacles</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper"><p class="logo">
+  <a href="../../../../index.html">
+    <img class="logo" src="../../../../_static/4ONSE_logo.png" title="https://kennethreitz.org/tattoos"/>
+  </a>
+</p>
+<!--
+<p>
+<iframe src="http://ghbtns.com/github-btn.html?user=istsos&repo=istsos2&type=watch&count=true&size=large"
+  allowtransparency="true" frameborder="0" scrolling="0" width="200px" height="35px"></iframe>
+</p>
+-->
+<p>
+  4onse is a research project aimed at evaluating non-conventional monitoring systems to empower
+  low-income economies with environmental data production and support risk reduction.
+</p>
+
+<h3>Stay Informed</h3>
+<p>Receive updates on new releases and upcoming projects.</p>
+
+<p><a target='_blank' href="http://tinyletter.com/4onse">Join Mailing List</a>.</p>
+
+<p><a target='_blank' href="http://www.4onse.ch">Visit the website</a>.</p>
+<p>
+  <a href="https://www.facebook.com/Four-times-Open-Non-conventional-system-for-Sensing-the-Environment-150625125418458/" target='_blank' class="facebook-follow-button" data-show-count="false">Follow us on Facebook</a>
+  <a href="https://twitter.com/SNSF_4onse" target='_blank' class="twitter-follow-button" data-show-count="false">Follow @SNSF_4onse</a>
+  <a href="https://github.com/4onse" target='_blank' class="github-follow-button" data-show-count="false">Contribute on GitHub.</a>
+  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+  </script>
+</p>
+
+<h3>Other Projects</h3>
+
+<ul>
+    <li><a href="http://istsos.org/">istSOS</a></li>
+    <li><a href="https://github.com/istSOS">OAT</a></li>
+    <li><a href="http://www.osgeo.org/">OSGeo</a></li>
+</ul>
+
+<h3>Navigation</h3>
+<ul class="footer_nav">
+      <li class="prev">
+        <p>Previous topic: <a href="material.html">Materials</a></p>
+      </li>
+      <li class="next">
+        <p>Next topic: <a href="../user/instructions.html">Instructions</a></p>
+      </li>
+</ul>
+  <h3><a href="../../../../index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Design</a><ul>
+<li><a class="reference internal" href="#sensor-unit-components">Sensor unit components</a></li>
+<li><a class="reference internal" href="#control-unit">Control unit</a></li>
+<li><a class="reference internal" href="#power-unit">Power unit</a></li>
+<li><a class="reference internal" href="#pole">Pole</a><ul>
+<li><a class="reference internal" href="#suburban-weather-station">Suburban weather station</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../../../../index.html">Documentation overview</a><ul>
+  <li><a href="../user/index.html">4onse-mod weather station</a><ul>
+      <li>Previous: <a href="material.html" title="previous chapter">Materials</a></li>
+      <li>Next: <a href="../user/instructions.html" title="next chapter">Instructions</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../../../../search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script><!-- Alabaster (krTheme++) Hacks -->
+
+<!-- CSS Adjustments (I'm very picky.) -->
+<style type="text/css">
+
+  /* Rezzy requires precise alignment. */
+  img.logo {margin-left: -20px!important;}
+
+  /* "Quick Search" should be capitalized. */
+  div#searchbox h3 {text-transform: capitalize;}
+
+  /* Make the document a little wider, less code is cut-off. */
+  div.document {width: 1008px;}
+
+  /* Much-improved spacing around code blocks. */
+  div.highlight pre {padding: 11px 14px;}
+
+  /* Remain Responsive! */
+  @media screen and (max-width: 1008px) {
+    div.sphinxsidebar {display: none;}
+    div.document {width: 100%!important;}
+
+    /* Have code blocks escape the document right-margin. */
+    div.highlight pre {margin-right: -30px;}
+  }
+
+</style>
+
+<!-- Analytics tracking for Kenneth. -->
+<script type="text/javascript">
+  var _gauges = _gauges || [];
+  (function() {
+    var t   = document.createElement('script');
+    t.type  = 'text/javascript';
+    t.async = true;
+    t.id    = 'gauges-tracker';
+    t.setAttribute('data-site-id', '56ca7a57c88d9011080024dd');
+    t.setAttribute('data-track-path', 'https://track.gaug.es/track.gif');
+    t.src = 'https://d36ee2fcip1434.cloudfront.net/track.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(t, s);
+  })();
+</script>
+
+<!-- There are no more hacks. -->
+<!--         இڿڰۣ-ڰۣ—         -->
+<!--   Love, Kenneth Reitz    -->
+
+<script src="../../../../_static//konami.js"></script>
+<script>
+  var easter_egg = new Konami('http://fortunes.herokuapp.com/random/raw');
+</script>
+
+<!-- That was not a hack. That was art. -->
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;MMXVII. <a href="http://www.supsi.ch/ist">Istituto Scienze della Terra</a>.
+      
+    </div>
+
+    
+    <a href="https://github.com/4onse/4onse-doc" class="github">
+        <img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub"  class="github"/>
+    </a>
+    
+
+    
+  </body>
+</html>

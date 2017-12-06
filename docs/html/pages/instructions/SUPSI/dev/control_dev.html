@@ -1,0 +1,382 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Control unit instructions &#8212; Requests 2.18.3 documentation</title>
+    <link rel="stylesheet" href="../../../../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../../../',
+        VERSION:     '2.18.3',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="../../../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../../../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../search.html" />
+   
+  <link rel="stylesheet" href="../../../../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head>
+  <body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="control-unit-instructions">
+<span id="contol-dev"></span><h1>Control unit instructions<a class="headerlink" href="#control-unit-instructions" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="step-down-converter-preparation">
+<h2>Step-down converter preparation<a class="headerlink" href="#step-down-converter-preparation" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li>Follow this guide (<a class="reference internal" href="converter_dev.html#buck-converter-soldering"><span class="std std-ref">Buck converter soldering</span></a>) to prepare the buck converters</li>
+<li>Follow this guide (<a class="reference internal" href="converter_dev.html#buck-converter-calibration"><span class="std std-ref">Buck converter calibration</span></a>) to configure the buck converters</li>
+</ol>
+</div>
+<div class="section" id="step-by-step-guide">
+<h2>Step by step guide<a class="headerlink" href="#step-by-step-guide" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic">
+<li><p class="first">Cut the board with the design measures (210 mm x 250 mm)</p>
+</li>
+<li><p class="first">Print the holes schema and cut appropriately</p>
+<table border="1" class="table-image docutils">
+<colgroup>
+<col width="100%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference external" href="../../../../_static/design/holes.png"><img alt="holes" src="../../../../_images/holes1.png" style="width: 25%;" /></a></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li><p class="first">Stick the hole schema to the plastic board</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference external" href="../../../../_static/design/plexi_holes_schema.jpg"><img alt="plexi_holes_schema" src="../../../../_images/plexi_holes_schema.jpg" style="width: 25%;" /></a></td>
+<td><a class="reference external" href="../../../../_static/design/holes_schema.jpg"><img alt="holes_schema" src="../../../../_images/holes_schema.jpg" style="width: 25%;" /></a></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li><p class="first">Verify that the holes fit with your items (connectors,
+microprocessors and other components)</p>
+</li>
+<li><p class="first">Eventually, in case of inconsistencies, make appropriate corrections using a colored mark</p>
+</li>
+<li><p class="first">Drill the signed holes with the correct bit (3M &amp; 2M)</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference external" href="../../../_static/design/drilling.jpg"><img alt="drilling" src="../../../../_images/drilling.jpg" style="width: 25%;" /></a></td>
+<td><a class="reference external" href="../../../../_static/design/plexi_with_holes.jpg"><img alt="plexi_with_holes" src="../../../../_images/plexi_with_holes.jpg" style="width: 25%;" /></a></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Prepare the screws and the spacers</p>
+</div>
+</li>
+<li><p class="first">Mount the M3 spacers for the Arduino, RTC, LM393 and the two buck converter on the back part of the plexi</p>
+</li>
+<li><p class="first">Mount the M2 spacers for the SIM800 and DHT11</p>
+</li>
+<li><p class="first">Mount the barrier connector with the right screws (M2.5)</p>
+</li>
+<li><p class="first">Mount the internal components: Arduino, GPRS, OpenLog, RTC, DHT11 and LM393</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="52%" />
+<col width="48%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Front</th>
+<th class="head">Back</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><a class="reference external" href="../../../../_static/instructions/front_mounted.jpg"><img alt="front_mounted" src="../../../../_images/front_mounted.jpg" style="width: 25%;" /></a></td>
+<td><a class="reference external" href="../../../../_static/instructions/back_mounted.jpg"><img alt="back_mounted" src="../../../../_images/back_mounted.jpg" style="width: 25%;" /></a></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li><p class="first">Follow the schema in the figures below to wire the cables for the power supply system.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Please, at this step, do not plug the power cables to the hardware components</p>
+</div>
+<table border="1" class="docutils">
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Front</th>
+<th class="head">Back</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><a class="reference external" href="../../../../_static/design/front.png"><img alt="front" src="../../../../_images/front.png" style="width: 25%;" /></a></td>
+<td><a class="reference external" href="../../../../_static/design/back.png"><img alt="back" src="../../../../_images/back.png" style="width: 25%;" /></a></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li><p class="first">Mount the buck converters and plug them</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="49%" />
+<col width="51%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference external" href="../../../../_static/converter/converter_mounted.jpg"><img alt="converter_mounted" src="../../../../_images/converter_mounted.jpg" style="width: 25%;" /></a></td>
+<td><a class="reference external" href="../../../../_static/converter/converter_plugged2.jpg"><img alt="converter_plugged2" src="../../../../_images/converter_plugged2.jpg" style="width: 25%;" /></a></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li><p class="first">Check that everything is disconneted apart of the buck converter</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="49%" />
+<col width="51%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference external" href="../../../../_static/converter/no_wired.jpg"><img alt="no_wired" src="../../../../_images/no_wired.jpg" style="width: 25%;" /></a></td>
+<td><a class="reference external" href="../../../../_static/converter/converter_plugged2.jpg"><img alt="converter_plugged2" src="../../../../_images/converter_plugged2.jpg" style="width: 25%;" /></a></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li><p class="first">Check that the right voltage reaches each connector.
+In the figure below, we checked the Arduino input current.</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="100%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference external" href="../../../../_static/converter/check_arduino_jack.jpg"><img alt="check_arduino_jack" src="../../../../_images/check_arduino_jack.jpg" style="width: 25%;" /></a></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li><p class="first">When you are more than sure that the power circuit is ok,
+disconnect the main current source and plug the power cables to the components</p>
+</li>
+<li><p class="first">Following the above steps, the mid-result should be similar
+to this situation:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Front</th>
+<th class="head">Back</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><a class="reference external" href="../../../../_static/design/front_power.jpg"><img alt="front_power" src="../../../../_images/front_power.jpg" style="width: 25%;" /></a></td>
+<td><a class="reference external" href="../../../../_static/design/front_power.jpg"><img alt="back_power" src="../../../../_images/back_power.jpg" style="width: 25%;" /></a></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">We used some cable ties to better fix the red and black cables</p>
+</div>
+</li>
+<li><p class="first">Follow the schema below to build the data connection between the Arduino
+and the components using the Jumpers</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Pay attetion:
+* to the Arduino PIN number where the jumpers must be plugged
+* to the colors of the cables</p>
+</div>
+<table border="1" class="docutils">
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Front (Schema)</th>
+<th class="head">Front (examples)</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><a class="reference external" href="../../../../_static/design/hookup.png"><img alt="hookup" src="../../../../_images/hookup.png" style="width: 25%;" /></a></td>
+<td><a class="reference external" href="../../../../_static/design/front_example.jpg"><img alt="front_example" src="../../../../_images/front_example.jpg" style="width: 25%;" /></a></td>
+</tr>
+</tbody>
+</table>
+</li>
+</ol>
+<p><strong>Go to</strong> <a class="reference internal" href="../common/sensor.html#sensor-dev"><span class="std std-ref">Sensor instruction</span></a></p>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper"><p class="logo">
+  <a href="../../../../index.html">
+    <img class="logo" src="../../../../_static/4ONSE_logo.png" title="https://kennethreitz.org/tattoos"/>
+  </a>
+</p>
+<!--
+<p>
+<iframe src="http://ghbtns.com/github-btn.html?user=istsos&repo=istsos2&type=watch&count=true&size=large"
+  allowtransparency="true" frameborder="0" scrolling="0" width="200px" height="35px"></iframe>
+</p>
+-->
+<p>
+  4onse is a research project aimed at evaluating non-conventional monitoring systems to empower
+  low-income economies with environmental data production and support risk reduction.
+</p>
+
+<h3>Stay Informed</h3>
+<p>Receive updates on new releases and upcoming projects.</p>
+
+<p><a target='_blank' href="http://tinyletter.com/4onse">Join Mailing List</a>.</p>
+
+<p><a target='_blank' href="http://www.4onse.ch">Visit the website</a>.</p>
+<p>
+  <a href="https://www.facebook.com/Four-times-Open-Non-conventional-system-for-Sensing-the-Environment-150625125418458/" target='_blank' class="facebook-follow-button" data-show-count="false">Follow us on Facebook</a>
+  <a href="https://twitter.com/SNSF_4onse" target='_blank' class="twitter-follow-button" data-show-count="false">Follow @SNSF_4onse</a>
+  <a href="https://github.com/4onse" target='_blank' class="github-follow-button" data-show-count="false">Contribute on GitHub.</a>
+  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+  </script>
+</p>
+
+<h3>Other Projects</h3>
+
+<ul>
+    <li><a href="http://istsos.org/">istSOS</a></li>
+    <li><a href="https://github.com/istSOS">OAT</a></li>
+    <li><a href="http://www.osgeo.org/">OSGeo</a></li>
+</ul>
+
+<h3>Navigation</h3>
+<ul class="footer_nav">
+</ul>
+  <h3><a href="../../../../index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Control unit instructions</a><ul>
+<li><a class="reference internal" href="#step-down-converter-preparation">Step-down converter preparation</a></li>
+<li><a class="reference internal" href="#step-by-step-guide">Step by step guide</a></li>
+</ul>
+</li>
+</ul>
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../../../../index.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../../../../search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script><!-- Alabaster (krTheme++) Hacks -->
+
+<!-- CSS Adjustments (I'm very picky.) -->
+<style type="text/css">
+
+  /* Rezzy requires precise alignment. */
+  img.logo {margin-left: -20px!important;}
+
+  /* "Quick Search" should be capitalized. */
+  div#searchbox h3 {text-transform: capitalize;}
+
+  /* Make the document a little wider, less code is cut-off. */
+  div.document {width: 1008px;}
+
+  /* Much-improved spacing around code blocks. */
+  div.highlight pre {padding: 11px 14px;}
+
+  /* Remain Responsive! */
+  @media screen and (max-width: 1008px) {
+    div.sphinxsidebar {display: none;}
+    div.document {width: 100%!important;}
+
+    /* Have code blocks escape the document right-margin. */
+    div.highlight pre {margin-right: -30px;}
+  }
+
+</style>
+
+<!-- Analytics tracking for Kenneth. -->
+<script type="text/javascript">
+  var _gauges = _gauges || [];
+  (function() {
+    var t   = document.createElement('script');
+    t.type  = 'text/javascript';
+    t.async = true;
+    t.id    = 'gauges-tracker';
+    t.setAttribute('data-site-id', '56ca7a57c88d9011080024dd');
+    t.setAttribute('data-track-path', 'https://track.gaug.es/track.gif');
+    t.src = 'https://d36ee2fcip1434.cloudfront.net/track.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(t, s);
+  })();
+</script>
+
+<!-- There are no more hacks. -->
+<!--         இڿڰۣ-ڰۣ—         -->
+<!--   Love, Kenneth Reitz    -->
+
+<script src="../../../../_static//konami.js"></script>
+<script>
+  var easter_egg = new Konami('http://fortunes.herokuapp.com/random/raw');
+</script>
+
+<!-- That was not a hack. That was art. -->
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;MMXVII. <a href="http://www.supsi.ch/ist">Istituto Scienze della Terra</a>.
+      
+    </div>
+
+    
+    <a href="https://github.com/4onse/4onse-doc" class="github">
+        <img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub"  class="github"/>
+    </a>
+    
+
+    
+  </body>
+</html>

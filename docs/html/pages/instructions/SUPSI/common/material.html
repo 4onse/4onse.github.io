@@ -1,0 +1,630 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Materials &#8212; Requests 2.18.3 documentation</title>
+    <link rel="stylesheet" href="../../../../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../../../',
+        VERSION:     '2.18.3',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="../../../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../../../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../search.html" />
+    <link rel="next" title="Design" href="design.html" />
+    <link rel="prev" title="4onse-mod weather station" href="../user/index.html" />
+   
+  <link rel="stylesheet" href="../../../../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head>
+  <body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="materials">
+<span id="materials-common"></span><h1>Materials<a class="headerlink" href="#materials" title="Permalink to this headline">¶</a></h1>
+<p>This section list all the components that you need to build the 4onse-mod weather
+station.</p>
+<ul class="simple">
+<li><a class="reference internal" href="#sensors"><span class="std std-ref">Sensors</span></a></li>
+<li><a class="reference internal" href="#control-devices"><span class="std std-ref">Control devices</span></a></li>
+<li><a class="reference internal" href="#items-for-solar-shield"><span class="std std-ref">Items for solar shield</span></a></li>
+<li><a class="reference internal" href="#tools"><span class="std std-ref">Tools</span></a></li>
+</ul>
+<div class="section" id="sensors">
+<h2>Sensors<a class="headerlink" href="#sensors" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="docutils">
+<colgroup>
+<col width="21%" />
+<col width="19%" />
+<col width="13%" />
+<col width="13%" />
+<col width="20%" />
+<col width="12%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Sensor name</th>
+<th class="head">Observed property</th>
+<th class="head">Voltage</th>
+<th class="head">Datasheet</th>
+<th class="head">Photo</th>
+<th class="head">Price (USD)</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>DS18B20</td>
+<td>Temperature</td>
+<td>from 3 to 5V</td>
+<td><a class="reference external" href="https://datasheets.maximintegrated.com/en/ds/DS18B20.pdf">link1</a></td>
+<td><a class="reference external" href="../../../../_static/sensors/DS18B20.jpg"><img alt="ds18b20" src="../../../../_images/DS18B20.jpg" style="width: 100%;" /></a></td>
+<td>~ 3</td>
+</tr>
+<tr class="row-odd"><td>BME280</td>
+<td>Pressure/humidity</td>
+<td>5-3.3V</td>
+<td><a class="reference external" href="https://ae-bst.resource.bosch.com/media/_tech/media/datasheets/BST-BME280_DS001-11.pdf">link2</a></td>
+<td><a class="reference external" href="../../../../_static/sensors/BME280.jpg"><img alt="bme280" src="../../../../_images/BME280.jpg" style="width: 100%;" /></a></td>
+<td>~ 11</td>
+</tr>
+<tr class="row-even"><td>DHT11</td>
+<td>Temperature/humidity</td>
+<td>5V</td>
+<td><a class="reference external" href="http://www.micropik.com/PDF/dht11.pdf">link3</a></td>
+<td><a class="reference external" href="../../../../_static/sensors/DHT11.jpg"><img alt="dht11" src="../../../../_images/DHT11.jpg" style="width: 100%;" /></a></td>
+<td>~ 5</td>
+</tr>
+<tr class="row-odd"><td>Wind speed</td>
+<td>Wind speed</td>
+<td>5V</td>
+<td><a class="reference external" href="https://www.sparkfun.com/datasheets/Sensors/Weather/Weather%20Sensor%20Assembly..pdf">link4</a></td>
+<td><a class="reference external" href="../../../../_static/sensors/wind_speed.jpg"><img alt="wind_speed" src="../../../../_images/wind_speed.jpg" style="width: 100%;" /></a></td>
+<td>~ 25</td>
+</tr>
+<tr class="row-even"><td>Wind direction</td>
+<td>Wind direction</td>
+<td>5V</td>
+<td><a class="reference external" href="https://www.sparkfun.com/datasheets/Sensors/Weather/Weather%20Sensor%20Assembly..pdf">link4</a></td>
+<td><a class="reference external" href="../../../../_static/sensors/wind_dir.jpg"><img alt="wind_dir" src="../../../../_images/wind_dir.jpg" style="width: 100%;" /></a></td>
+<td>~ 26</td>
+</tr>
+<tr class="row-odd"><td>Davis aerocone 6465</td>
+<td>Pluviometer</td>
+<td>5V</td>
+<td><a class="reference external" href="https://www.davisnet.com/product_documents/weather/manuals/07395-334_IM_7852.pdf">link5</a></td>
+<td><a class="reference external" href="../../../../_static/sensors/davis6465.jpg"><img alt="davis6465" src="../../../../_images/davis6465.jpg" style="width: 100%;" /></a></td>
+<td>~ 100</td>
+</tr>
+<tr class="row-even"><td>YL-69</td>
+<td>Soil moisture</td>
+<td>5V</td>
+<td><a class="reference external" href="https://www.amazon.it/Gaoxing-Tech-igrometro-rilevazione-intelligente/dp/B06XCLCM7H/ref=sr_1_7?s=electronics&amp;ie=UTF8&amp;qid=1502281430&amp;sr=1-7&amp;keywords=soil+moisture">link6</a></td>
+<td><a class="reference external" href="../../../../_static/sensors/YL-69.jpg"><img alt="yl69" src="../../../../_images/YL-69.jpg" style="width: 100%;" /></a></td>
+<td>~ 1.5</td>
+</tr>
+<tr class="row-odd"><td>BH1750</td>
+<td>Light</td>
+<td>5V</td>
+<td><a class="reference external" href="http://cpre.kmutnb.ac.th/esl/learning/bh1750-light-sensor/bh1750fvi-e_datasheet.pdf">link7</a></td>
+<td><a class="reference external" href="../../../../_static/sensors/BH1750.jpg"><img alt="bh1750" src="../../../../_images/BH1750.jpg" style="width: 100%;" /></a></td>
+<td>~ 5</td>
+</tr>
+<tr class="row-even"><td><strong>Total price</strong></td>
+<td colspan="5"><strong>~ 176.5 USD</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Return on top to <a class="reference internal" href="#materials"><span class="std std-ref">Materials</span></a></p>
+</div>
+<div class="section" id="control-devices">
+<h2>Control devices<a class="headerlink" href="#control-devices" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="docutils">
+<colgroup>
+<col width="21%" />
+<col width="20%" />
+<col width="13%" />
+<col width="13%" />
+<col width="20%" />
+<col width="13%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Sensor name</th>
+<th class="head">Description</th>
+<th class="head">Voltage</th>
+<th class="head">Datasheet</th>
+<th class="head">Photo</th>
+<th class="head">Price (USD)</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>LM393</td>
+<td>Soil moisture adapter</td>
+<td>5V</td>
+<td><a class="reference external" href="https://www.amazon.it/Gaoxing-Tech-igrometro-rilevazione-intelligente/dp/B06XCLCM7H/ref=sr_1_7?s=electronics&amp;ie=UTF8&amp;qid=1502281430&amp;sr=1-7&amp;keywords=soil+moisture">link8</a></td>
+<td><a class="reference external" href="../../../../_static/components/lm393.png"><img alt="lm393" src="../../../../_images/lm393.png" style="width: 100%;" /></a></td>
+<td>see YL-69</td>
+</tr>
+<tr class="row-odd"><td>DS3231</td>
+<td>RTC</td>
+<td>5V</td>
+<td><a class="reference external" href="https://datasheets.maximintegrated.com/en/ds/DS1307.pdf">link9</a></td>
+<td><a class="reference external" href="../../../../_static/components/rtc.png"><img alt="ds3231" src="../../../../_images/rtc.png" style="width: 100%;" /></a></td>
+<td>~ 5</td>
+</tr>
+<tr class="row-even"><td>OpenLog</td>
+<td>Data logger</td>
+<td>5V</td>
+<td><a class="reference external" href="https://www.sparkfun.com/products/13712">link10</a></td>
+<td><a class="reference external" href="../../../../_static/components/openlog.png"><img alt="openlog" src="../../../../_images/openlog.png" style="width: 100%;" /></a></td>
+<td>~ 15</td>
+</tr>
+<tr class="row-odd"><td>SIM800</td>
+<td>GPRS</td>
+<td>5V</td>
+<td><a class="reference external" href="http://simcom.ee/documents/SIM800/SIM800_Hardware%20Design_V1.08.pdf">link11</a></td>
+<td><a class="reference external" href="../../../../_static/components/sim800.png"><img alt="sim800" src="../../../../_images/sim800.png" style="width: 100%;" /></a></td>
+<td>~ 25</td>
+</tr>
+<tr class="row-even"><td>Step-down</td>
+<td>Step-down</td>
+<td>from 12 to 5V</td>
+<td><a class="reference external" href="http://simcom.ee/documents/SIM800/SIM800_Hardware%20Design_V1.08.pdf">link11</a></td>
+<td><a class="reference external" href="../../../../_static/components/step_down.jpg"><img alt="step-down" src="../../../../_images/step_down.jpg" style="width: 100%;" /></a></td>
+<td>~ 7</td>
+</tr>
+<tr class="row-odd"><td>Step-down</td>
+<td>Step-down</td>
+<td>from 12 to 7V</td>
+<td><a class="reference external" href="http://simcom.ee/documents/SIM800/SIM800_Hardware%20Design_V1.08.pdf">link11</a></td>
+<td><a class="reference external" href="../../../../_static/components/step_down.jpg"><img alt="step-down" src="../../../../_images/step_down.jpg" style="width: 100%;" /></a></td>
+<td>~ 7</td>
+</tr>
+<tr class="row-even"><td>Arduino Mega 2560</td>
+<td>Microcontroller</td>
+<td>7V</td>
+<td><a class="reference external" href="https://store.arduino.cc/usa/arduino-mega-2560-rev3">link12</a></td>
+<td><a class="reference external" href="../../../../_static/components/arduino_mega.jpg"><img alt="arduino_mega" src="../../../../_images/arduino_mega.jpg" style="width: 100%;" /></a></td>
+<td>~ 40</td>
+</tr>
+<tr class="row-odd"><td><strong>Total price</strong></td>
+<td colspan="5"><strong>~ 99 USD</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Return on top to <a class="reference internal" href="#materials"><span class="std std-ref">Materials</span></a></p>
+</div>
+<div class="section" id="miscellaneous">
+<h2>Miscellaneous<a class="headerlink" href="#miscellaneous" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="docutils">
+<colgroup>
+<col width="23%" />
+<col width="49%" />
+<col width="12%" />
+<col width="15%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Item</th>
+<th class="head">Type</th>
+<th class="head">Pieces</th>
+<th class="head">Price ~ (USD)</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Screw</td>
+<td>M3 x 6 mm</td>
+<td>24 pcs</td>
+<td>1</td>
+</tr>
+<tr class="row-odd"><td>Spacer</td>
+<td>M3 x 10 mm - Female/Female</td>
+<td>12 pcs</td>
+<td>0.9</td>
+</tr>
+<tr class="row-even"><td>Screw</td>
+<td>M2 x 6 mm</td>
+<td>14 pcs</td>
+<td>1</td>
+</tr>
+<tr class="row-odd"><td>Spacer</td>
+<td>M2 x 10 mm - Female/Female</td>
+<td>7 pcs</td>
+<td>0.7</td>
+</tr>
+<tr class="row-even"><td>Screw</td>
+<td>M2 x 16 mm</td>
+<td>14 pcs</td>
+<td>2</td>
+</tr>
+<tr class="row-odd"><td>Bolt</td>
+<td>M2</td>
+<td>14 pcs</td>
+<td>1.2</td>
+</tr>
+<tr class="row-even"><td>Screw</td>
+<td>Size as needed to fix plexi to the box</td>
+<td>2 pcs</td>
+<td>1</td>
+</tr>
+<tr class="row-odd"><td>Terminal</td>
+<td>Terminal block, barrier 12POS</td>
+<td>5 pcs</td>
+<td>7</td>
+</tr>
+<tr class="row-even"><td>Corrugated tube</td>
+<td>M20 x 20 m</td>
+<td>1 pcs</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Plexiglass</td>
+<td>4x210x250 mm</td>
+<td>1 pcs</td>
+<td>6</td>
+</tr>
+<tr class="row-even"><td>Plastic box</td>
+<td>300x220x120 mm</td>
+<td>1 pcs</td>
+<td>20</td>
+</tr>
+<tr class="row-odd"><td>Cable</td>
+<td>5 meters black and red</td>
+<td>1 pcs</td>
+<td>4</td>
+</tr>
+<tr class="row-even"><td>Jumpers</td>
+<td>Black male/female (20 cm)</td>
+<td>5 pcs</td>
+<td>0.5</td>
+</tr>
+<tr class="row-odd"><td>Jumpers</td>
+<td>Red male/female (20 cm)</td>
+<td>8 pcs</td>
+<td>0.9</td>
+</tr>
+<tr class="row-even"><td>Jumpers</td>
+<td>Blue male/female (20 cm)</td>
+<td>4 pcs</td>
+<td>0.4</td>
+</tr>
+<tr class="row-odd"><td>Jumpers</td>
+<td>Green male/male (20 cm)</td>
+<td>2 pcs</td>
+<td>0.2</td>
+</tr>
+<tr class="row-even"><td>Jumpers</td>
+<td>White male/male (20 cm)</td>
+<td>2 pcs</td>
+<td>0.2</td>
+</tr>
+<tr class="row-odd"><td>Jumpers</td>
+<td>Green male/female (10/11 cm)</td>
+<td>1 pcs</td>
+<td>0.05</td>
+</tr>
+<tr class="row-even"><td>Jumpers</td>
+<td>White male/female (10/11 cm)</td>
+<td>1 pcs</td>
+<td>0.05</td>
+</tr>
+<tr class="row-odd"><td>Jumpers</td>
+<td>Violet male/female (20 cm)</td>
+<td>2 pcs</td>
+<td>0.2</td>
+</tr>
+<tr class="row-even"><td>Jumpers</td>
+<td>Orange male/female (20 cm)</td>
+<td>2 pcs</td>
+<td>0.2</td>
+</tr>
+<tr class="row-odd"><td>Jumpers</td>
+<td>Yellow male/female (20 cm)</td>
+<td>2 pcs</td>
+<td>0.2</td>
+</tr>
+<tr class="row-even"><td>Jumpers</td>
+<td>Black male/female (10/11 cm)</td>
+<td>1 pcs</td>
+<td>0.2</td>
+</tr>
+<tr class="row-odd"><td>Jumpers</td>
+<td>Red male/female (10/11 cm)</td>
+<td>1 pcs</td>
+<td>0.2</td>
+</tr>
+<tr class="row-even"><td>Resistor</td>
+<td>4.7 kΩ</td>
+<td>1 pcs</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Resistor</td>
+<td>10 kΩ</td>
+<td>2 pcs</td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+<p>Return on top to <a class="reference internal" href="#materials"><span class="std std-ref">Materials</span></a></p>
+</div>
+<div class="section" id="items-for-solar-shield">
+<h2>Items for solar shield<a class="headerlink" href="#items-for-solar-shield" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="docutils">
+<colgroup>
+<col width="23%" />
+<col width="49%" />
+<col width="12%" />
+<col width="15%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Item</th>
+<th class="head">Type</th>
+<th class="head">Pieces</th>
+<th class="head">Price ~ (USD)</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Threaded rod</td>
+<td>M3 x 20cm</td>
+<td>3 pcs</td>
+<td>6.2</td>
+</tr>
+<tr class="row-odd"><td>Bolt</td>
+<td>M3</td>
+<td>3 pcs</td>
+<td>0.2</td>
+</tr>
+<tr class="row-even"><td>Blind bolt</td>
+<td>M3</td>
+<td>3 pcs</td>
+<td>0.2</td>
+</tr>
+<tr class="row-odd"><td>Screw</td>
+<td>M3 x 5 mm</td>
+<td>2 pcs</td>
+<td>0.2</td>
+</tr>
+<tr class="row-even"><td>Spacer</td>
+<td>M3 x 10 mm - Female/Female</td>
+<td>1 pcs</td>
+<td>0.1</td>
+</tr>
+<tr class="row-odd"><td>White plant saucer</td>
+<td>diameter 20 cm</td>
+<td>7 pcs</td>
+<td>11</td>
+</tr>
+<tr class="row-even"><td>Junction box</td>
+<td>D80 mm x H50 mm</td>
+<td>1 pcs</td>
+<td>5.5</td>
+</tr>
+<tr class="row-odd"><td>Cable gland joint</td>
+<td>M20</td>
+<td>3 pcs</td>
+<td>1</td>
+</tr>
+<tr class="row-even"><td>Plastic tube</td>
+<td>6M x 1 m</td>
+<td>1 pcs</td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+<p>Return on top to <a class="reference internal" href="#materials"><span class="std std-ref">Materials</span></a></p>
+</div>
+<div class="section" id="tools">
+<h2>Tools<a class="headerlink" href="#tools" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="docutils">
+<colgroup>
+<col width="27%" />
+<col width="58%" />
+<col width="14%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Item</th>
+<th class="head">Type</th>
+<th class="head">Pieces</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Screwdriver</td>
+<td>precision set</td>
+<td>1 pcs</td>
+</tr>
+<tr class="row-odd"><td>Multimeter</td>
+<td>to check voltge/current</td>
+<td>1 pcs</td>
+</tr>
+<tr class="row-even"><td>Cable stripper/cutter</td>
+<td>&#160;</td>
+<td>1 pcs</td>
+</tr>
+<tr class="row-odd"><td>Drill</td>
+<td>bits M2, M2.5, M3, M4</td>
+<td>1 pcs</td>
+</tr>
+<tr class="row-even"><td>Welder</td>
+<td>&#160;</td>
+<td>1 pcs</td>
+</tr>
+<tr class="row-odd"><td>Pond for welding</td>
+<td>&#160;</td>
+<td>1 pcs</td>
+</tr>
+</tbody>
+</table>
+<p>Return on top to <a class="reference internal" href="#materials"><span class="std std-ref">Materials</span></a></p>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper"><p class="logo">
+  <a href="../../../../index.html">
+    <img class="logo" src="../../../../_static/4ONSE_logo.png" title="https://kennethreitz.org/tattoos"/>
+  </a>
+</p>
+<!--
+<p>
+<iframe src="http://ghbtns.com/github-btn.html?user=istsos&repo=istsos2&type=watch&count=true&size=large"
+  allowtransparency="true" frameborder="0" scrolling="0" width="200px" height="35px"></iframe>
+</p>
+-->
+<p>
+  4onse is a research project aimed at evaluating non-conventional monitoring systems to empower
+  low-income economies with environmental data production and support risk reduction.
+</p>
+
+<h3>Stay Informed</h3>
+<p>Receive updates on new releases and upcoming projects.</p>
+
+<p><a target='_blank' href="http://tinyletter.com/4onse">Join Mailing List</a>.</p>
+
+<p><a target='_blank' href="http://www.4onse.ch">Visit the website</a>.</p>
+<p>
+  <a href="https://www.facebook.com/Four-times-Open-Non-conventional-system-for-Sensing-the-Environment-150625125418458/" target='_blank' class="facebook-follow-button" data-show-count="false">Follow us on Facebook</a>
+  <a href="https://twitter.com/SNSF_4onse" target='_blank' class="twitter-follow-button" data-show-count="false">Follow @SNSF_4onse</a>
+  <a href="https://github.com/4onse" target='_blank' class="github-follow-button" data-show-count="false">Contribute on GitHub.</a>
+  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+  </script>
+</p>
+
+<h3>Other Projects</h3>
+
+<ul>
+    <li><a href="http://istsos.org/">istSOS</a></li>
+    <li><a href="https://github.com/istSOS">OAT</a></li>
+    <li><a href="http://www.osgeo.org/">OSGeo</a></li>
+</ul>
+
+<h3>Navigation</h3>
+<ul class="footer_nav">
+      <li class="prev">
+        <p>Previous topic: <a href="../user/index.html">4onse-mod weather station</a></p>
+      </li>
+      <li class="next">
+        <p>Next topic: <a href="design.html">Design</a></p>
+      </li>
+</ul>
+  <h3><a href="../../../../index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Materials</a><ul>
+<li><a class="reference internal" href="#sensors">Sensors</a></li>
+<li><a class="reference internal" href="#control-devices">Control devices</a></li>
+<li><a class="reference internal" href="#miscellaneous">Miscellaneous</a></li>
+<li><a class="reference internal" href="#items-for-solar-shield">Items for solar shield</a></li>
+<li><a class="reference internal" href="#tools">Tools</a></li>
+</ul>
+</li>
+</ul>
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../../../../index.html">Documentation overview</a><ul>
+  <li><a href="../user/index.html">4onse-mod weather station</a><ul>
+      <li>Previous: <a href="../user/index.html" title="previous chapter">4onse-mod weather station</a></li>
+      <li>Next: <a href="design.html" title="next chapter">Design</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../../../../search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script><!-- Alabaster (krTheme++) Hacks -->
+
+<!-- CSS Adjustments (I'm very picky.) -->
+<style type="text/css">
+
+  /* Rezzy requires precise alignment. */
+  img.logo {margin-left: -20px!important;}
+
+  /* "Quick Search" should be capitalized. */
+  div#searchbox h3 {text-transform: capitalize;}
+
+  /* Make the document a little wider, less code is cut-off. */
+  div.document {width: 1008px;}
+
+  /* Much-improved spacing around code blocks. */
+  div.highlight pre {padding: 11px 14px;}
+
+  /* Remain Responsive! */
+  @media screen and (max-width: 1008px) {
+    div.sphinxsidebar {display: none;}
+    div.document {width: 100%!important;}
+
+    /* Have code blocks escape the document right-margin. */
+    div.highlight pre {margin-right: -30px;}
+  }
+
+</style>
+
+<!-- Analytics tracking for Kenneth. -->
+<script type="text/javascript">
+  var _gauges = _gauges || [];
+  (function() {
+    var t   = document.createElement('script');
+    t.type  = 'text/javascript';
+    t.async = true;
+    t.id    = 'gauges-tracker';
+    t.setAttribute('data-site-id', '56ca7a57c88d9011080024dd');
+    t.setAttribute('data-track-path', 'https://track.gaug.es/track.gif');
+    t.src = 'https://d36ee2fcip1434.cloudfront.net/track.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(t, s);
+  })();
+</script>
+
+<!-- There are no more hacks. -->
+<!--         இڿڰۣ-ڰۣ—         -->
+<!--   Love, Kenneth Reitz    -->
+
+<script src="../../../../_static//konami.js"></script>
+<script>
+  var easter_egg = new Konami('http://fortunes.herokuapp.com/random/raw');
+</script>
+
+<!-- That was not a hack. That was art. -->
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;MMXVII. <a href="http://www.supsi.ch/ist">Istituto Scienze della Terra</a>.
+      
+    </div>
+
+    
+    <a href="https://github.com/4onse/4onse-doc" class="github">
+        <img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub"  class="github"/>
+    </a>
+    
+
+    
+  </body>
+</html>
