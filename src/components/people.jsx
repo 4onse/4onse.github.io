@@ -17,7 +17,7 @@ import milan from '../data/images/team/milan_antonovic.jpg'
 import mirko from '../data/images/team/mirko_cardoso.jpg'
 import daniele from '../data/images/team/daniele_strigaro.png'
 import rangajeewa from '../data/images/team/rangajeewa_ratnayak.jpg'
-import prasad from '../data/images/team/prasad_dananjaya_bandara.jpg'
+import sandaru from '../data/images/team/sandaru_weerasinghe.png'
 import mahanama from '../data/images/team/p_k_s_mahanama.jpg'
 import sudantha from '../data/images/team/b_h_sudantha.jpg'
 import emeshi from '../data/images/team/emeshi_warusavitharana.jpg'
@@ -145,11 +145,11 @@ const People = React.createClass({
         Aliquam dui mauris, mattis quis lacus id, pellentesque lobortis odio.</p>
       },
       {
-        name: 'Prasad Dananjaya Bandara',
-        role: 'Research assistant',
+        name: 'Sandaru Weerasinghe',
+        role: 'Assistant Researcher',
         partner: 'UOM',
         address: <p>University of Moratuwa,<br/><em>Colombo, Sri Lanka</em></p>,
-        avatar: prasad,
+        avatar: sandaru,
         description: <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         Donec mattis pretium massa. Aliquam erat volutpat. Nulla facilisi.
         Donec vulputate interdum sollicitudin. Nunc lacinia auctor quam sed pellentesque.
