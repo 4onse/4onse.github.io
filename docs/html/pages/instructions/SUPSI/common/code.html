@@ -4,20 +4,12 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>istSOS configuration &#8212; 4onse 0.3 documentation</title>
     <link rel="stylesheet" href="../../../../_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
-    <script type="text/javascript">
-      var DOCUMENTATION_OPTIONS = {
-        URL_ROOT:    '../../../../',
-        VERSION:     '0.3',
-        COLLAPSE_INDEX: false,
-        FILE_SUFFIX: '.html',
-        HAS_SOURCE:  true,
-        SOURCELINK_SUFFIX: '.txt'
-      };
-    </script>
+    <script type="text/javascript" src="../../../../_static/documentation_options.js"></script>
     <script type="text/javascript" src="../../../../_static/jquery.js"></script>
     <script type="text/javascript" src="../../../../_static/underscore.js"></script>
     <script type="text/javascript" src="../../../../_static/doctools.js"></script>
@@ -31,8 +23,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
 
-  </head>
-  <body>
+  </head><body>
   
 
     <div class="document">
@@ -100,7 +91,7 @@ next operations.</p>
 you can connect your computer to the arduino with a USB cable and upload
 the code. This is the step-by-step procedure to follow:</p>
 <ol class="arabic">
-<li><p class="first">Format the SD card in FAT32, download this <a class="reference download internal" href="../../../../_downloads/4onse-ws-sd.zip" download=""><code class="xref download docutils literal"><span class="pre">archive</span></code></a>
+<li><p class="first">Format the SD card in FAT32, download this <a class="reference download internal" href="../../../../_downloads/4onse-ws-sd.zip" download=""><code class="xref download docutils literal notranslate"><span class="pre">archive</span></code></a>
 , extract and copy it into the SD card root.
 On the SD card you should now have the following structure:</p>
 <ul class="simple">
@@ -113,7 +104,7 @@ On the SD card you should now have the following structure:</p>
 <p class="first admonition-title">Note</p>
 <p>All the folders must be empty.
 The <em>config.txt</em> file has the content shown here below:</p>
-<div class="highlight-bash"><div class="highlight"><pre><span></span><span class="m">9600</span>,36,3,2,0,0,0
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="m">9600</span>,26,3,2,0,0,0
 baud,escape,esc#,mode,verb,echo,ignoreRX
 </pre></div>
 </div>
@@ -138,12 +129,12 @@ Please remember the path where you install it.</p>
 <li>DHT</li>
 </ul>
 </li>
-<li><p class="first"><a class="reference download internal" href="../../../../_downloads/4onse-ws-ist.zip" download=""><code class="xref download docutils literal"><span class="pre">Download</span> <span class="pre">the</span> <span class="pre">archive</span></code></a>
+<li><p class="first"><a class="reference download internal" href="../../../../_downloads/4onse-ws-ist.zip" download=""><code class="xref download docutils literal notranslate"><span class="pre">Download</span> <span class="pre">the</span> <span class="pre">archive</span></code></a>
 and unzip it.</p>
 </li>
 <li><p class="first">Open the arduino IDE, go to <em>Files -&gt; Preferences</em>, and set the <em>Sketchbook</em> location
 to the project root (Es):</p>
-<div class="highlight-bash"><div class="highlight"><pre><span></span>/path/to/downloaded/package/4onse-ws/source/Arduino
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>/path/to/downloaded/package/4onse-ws/source/Arduino
 </pre></div>
 </div>
 </li>
@@ -151,7 +142,7 @@ to the project root (Es):</p>
 uncomment and set the following variable with the correct value (around line 54)
 that should be defined by your istSOS server and SIM provider.
 (see the example below):</p>
-<div class="highlight-c"><div class="highlight"><pre><span></span><span class="cp">#define SERVER &quot;istsos.org&quot;</span>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="cp">#define SERVER &quot;istsos.org&quot;</span>
 <span class="cp">#define URI &quot;istsos/wa/istsos/services/demo/operations/fastinsert&quot;</span>
 <span class="cp">#define PROCEDURE_ID &quot;PROCEDURE_ID&quot;</span>
 <span class="cp">#define BASIC_AUTH &quot;xxxx&quot;</span>
@@ -246,12 +237,14 @@ everithing is working.</p>
 </div>
 <div id="searchbox" style="display: none" role="search">
   <h3>Quick search</h3>
+    <div class="searchformwrapper">
     <form class="search" action="../../../../search.html" method="get">
-      <div><input type="text" name="q" /></div>
-      <div><input type="submit" value="Go" /></div>
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
       <input type="hidden" name="check_keywords" value="yes" />
       <input type="hidden" name="area" value="default" />
     </form>
+    </div>
 </div>
 <script type="text/javascript">$('#searchbox').show(0);</script><!-- Alabaster (krTheme++) Hacks -->
 

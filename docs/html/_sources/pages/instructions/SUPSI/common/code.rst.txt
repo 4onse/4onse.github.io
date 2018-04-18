@@ -62,7 +62,7 @@ the code. This is the step-by-step procedure to follow:
 
       .. code-block:: bash
 
-         9600,36,3,2,0,0,0
+         9600,26,3,2,0,0,0
          baud,escape,esc#,mode,verb,echo,ignoreRX
 
       After this step, remember to insert the micro SD card into the OpenLog
