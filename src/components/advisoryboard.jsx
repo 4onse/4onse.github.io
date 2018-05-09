@@ -26,7 +26,7 @@ import sudantha from '../data/images/team/b_h_sudantha.jpg'
 import emeshi from '../data/images/team/emeshi_warusavitharana.jpg'
 import imran from '../data/images/team/imran_shahid.jpg'
 import oka from '../data/images/team/oka.jpg'*/
-import noImage from '../data/images/team/User-Male-2-icon.png'
+// import noImage from '../data/images/team/User-Male-2-icon.png'
 // import contacts from '../data/images/background/contacts.jpg'
 //css
 import '../css/people.css';
@@ -79,12 +79,42 @@ const People = React.createClass({
     }*/
     let contactsData = [
       {
+        name: 'Dr. Tracy C. Thoman',
+        role: 'Senior MELD specialist',
+        partner: 'World Bank Group',
+        address: <p>MELD Made EZ<br/>
+                 <em>The Ohio State University Fisher College of Business
+         Columbus, Ohio</em></p>,
+        avatar: "https://media.licdn.com/dms/image/C5103AQFhoOY38swzfw/profile-displayphoto-shrink_800_800/0?e=1531353600&v=beta&t=5EwxO4Ty66Z15rIvTBboLjDr_9TFOT1W11WAWJ4pbK0",
+        description: <p>Senior MELD Specialist for UK Aid-funded Open Data for
+          Resilience project. Senior MELD Consultant for the Global Facility
+          for Disaster Reduction and Recovery's Innovation Lab. Conduct
+          evaluations; facilitate logic model creation and other strategic
+          sessions; apply learning to Challenge Fund projects as they are
+          implemented. Monitor all Challenge Fund projects.</p>
+      },
+      {
+        name: 'Dr. David Wiberg',
+        role: 'Theme Leader - Water Futures',
+        partner: 'International Water Management Institute (IWMI)',
+        address: <p>Sri Lanka<br/>Colombo</p>,
+        avatar: "https://media.licdn.com/dms/image/C5603AQHTqeiI4ESyjw/profile-displayphoto-shrink_800_800/0?e=1531353600&v=beta&t=Mj3NNeWldkkImDDCCZdPivPTSSjgHp4gAmhMl_I7cCE",
+        description: <p>Providing advanced research for development leadership
+          of the Water Futures Theme and the overall research strategy of IWMI.
+          Guiding the development of new and innovative water planning
+          decision-support tools to examine possible trade-offs, socio-economic
+          and environmental impacts, and opportunities for
+          sustainable and equitable water allocation. Developing knowledge
+          sharing platforms. Proposing measurable indicators and cost-effective
+          ways to monitor agreed Sustainable Development Goals and targets.</p>
+      },
+      {
         name: 'Dr. Andrea Salvetti (CH)',
         role: 'Department of Territory Canton Ticino',
         partner: 'Head of the Hydrology and Water Resources Management Sector',
         address: <p>Ufficio dei corsi d'acqua<br/>
                  <em>Via Franco Zorzi 13, 6501 Bellinzona</em></p>,
-        avatar: noImage,
+        avatar: "https://media.licdn.com/dms/image/C4D03AQH8XJZyMVQNZA/profile-displayphoto-shrink_800_800/0?e=1531353600&v=beta&t=eoxkHU_4xdl5OZQoDT7ChjXuEYzome1qV0vlNxSqaOA",
         description: <p>Experienced Environmental Engineer with a demonstrated history of
         working in the government administration industry. Strong community and social
         services professional skilled in HEC-RAS, Sustainable Development, ArcGIS,
@@ -95,7 +125,7 @@ const People = React.createClass({
         role: 'Glasgow Caledonia University (UK)',
         partner: 'Head of the Sustainable Urban Environment Research Group (SUE-RG)',
         address: <p></p>,
-        avatar: noImage,
+        avatar: "https://www.gcu.ac.uk/universitynews/Rohinton1webpic.jpg",
         description: <p>Professor Rohinton Emmanuel is Professor in Sustainable Design and
         Construction in Glasgow Caledonia University and has over 20 years of University teaching
         experience in Sri Lanka, Sweden, USA and UK. As an Architect with urban design interests,
@@ -114,11 +144,11 @@ const People = React.createClass({
         measurement in Glasgow, funded by UK and EU funding bodies.</p>
       },
       {
-        name: 'Dr. Prem Wattage',
-        role: 'University of Portsmouth (AU)',
+        name: 'Dr. Premachandra Wattage',
+        role: 'University of Portsmouth (UK)',
         partner: 'Director of The BEAM Research Centre',
         address: <p></p>,
-        avatar: noImage,
+        avatar: "https://media.licdn.com/dms/image/C5603AQFbyTJO8psPtQ/profile-displayphoto-shrink_800_800/0?e=1531353600&v=beta&t=vE9o0jcY0Jm9PqWdC8y2qHhSMVKc_YlOjJDbPsROoXI",
         description: <p>Prem Wattage is an independent consultant dedicated to the intelligent use
         of natural resources with over thirty years of experience in environmental economics
         research and management. In addition to working with the Centre for the Economics and
@@ -138,7 +168,7 @@ const People = React.createClass({
         role: 'The World Bank',
         partner: 'Disaster Risk Management Specialist',
         address: <p></p>,
-        avatar: noImage,
+        avatar: "https://media.licdn.com/dms/image/C4D03AQEHQmeXPSVb1w/profile-displayphoto-shrink_800_800/0?e=1531353600&v=beta&t=6n-O-Bo971swg2paJ8wlWuXJvb6NTi9TGs36Vf2EAaA",
         description: <p>Vievien has experience in the geospatial industry as project manager,
         consultant, and researcher and a particularly strong experience in GIS, geovisualization,
         collaborative and community mapping, databases, software development, web design,
