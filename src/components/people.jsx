@@ -22,7 +22,6 @@ import mahanama from '../data/images/team/p_k_s_mahanama.jpg'
 import sudantha from '../data/images/team/b_h_sudantha.jpg'
 import emeshi from '../data/images/team/emeshi_warusavitharana.jpg'
 import imran from '../data/images/team/imran_shahid.jpg'
-import oka from '../data/images/team/oka.jpg'
 // import noImage from '../data/images/team/no-image.png'
 // import contacts from '../data/images/background/contacts.jpg'
 //css
@@ -161,17 +160,6 @@ const People = React.createClass({
         partner: 'UOM',
         address: <p>University of Moratuwa,<br/><em>Colombo, Sri Lanka</em></p>,
         avatar: emeshi,
-        description: <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        Donec mattis pretium massa. Aliquam erat volutpat. Nulla facilisi.
-        Donec vulputate interdum sollicitudin. Nunc lacinia auctor quam sed pellentesque.
-        Aliquam dui mauris, mattis quis lacus id, pellentesque lobortis odio.</p>
-      },
-      {
-        name: 'Dr. Oka Karyanto',
-        role: 'Principal investigator',
-        partner: 'UGM',
-        address: <p>University of Moratuwa,<br/><em>Colombo, Sri Lanka</em></p>,
-        avatar: oka,
         description: <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         Donec mattis pretium massa. Aliquam erat volutpat. Nulla facilisi.
         Donec vulputate interdum sollicitudin. Nunc lacinia auctor quam sed pellentesque.

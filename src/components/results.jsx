@@ -32,21 +32,56 @@ const Results = React.createClass({
               <tr style={{cursor: "pointer"}} >
                 <td><strong>D1.1</strong></td>
                 <td>Dissemination Planl</td>
-                <td><a href='https://b2drop.eudat.eu/s/sEGJ6jxZlUi0Pdd' target='_blank'><img role='presentation' height='25' src={linkIcon}></img></a></td>
+                <td><a href='https://doi.org/10.5281/zenodo.1243676' target='_blank'><img role='presentation' height='25' src={linkIcon}></img></a></td>
               </tr>
               <tr style={{cursor: "pointer"}} >
                 <td><strong>D1.2</strong></td>
                 <td>Target stakeholder list</td>
-                <td><a href='https://b2drop.eudat.eu/s/p0lK79RvnUGvLPu' target='_blank'><img role='presentation' height='25' src={linkIcon}></img></a></td>
+                <td><a href='https://doi.org/10.5281/zenodo.1243836' target='_blank'><img role='presentation' height='25' src={linkIcon}></img></a></td>
               </tr>
               <tr style={{cursor: "pointer"}} >
                 <td><strong>D1.3</strong></td>
                 <td>Project identity manual</td>
-                <td><a href='https://b2drop.eudat.eu/s/m8PEgm00NffvwSy' target='_blank'><img role='presentation' height='25' src={linkIcon}></img></a></td>
+                <td><a href='https://doi.org/10.5281/zenodo.1243838' target='_blank'><img role='presentation' height='25' src={linkIcon}></img></a></td>
+              </tr>
+              <tr style={{cursor: "pointer"}} >
+                <td><strong>D1.4</strong></td>
+                <td>Dissemination material</td>
+                <td><a href='https://doi.org/10.5281/zenodo.1244145' target='_blank'><img role='presentation' height='25' src={linkIcon}></img></a></td>
+              </tr>
+              <tr style={{cursor: "pointer"}} >
+                <td><strong>D1.5</strong></td>
+                <td>Dissemination actions report</td>
+                <td><a href='https://doi.org/10.5281/zenodo.1244156' target='_blank'><img role='presentation' height='25' src={linkIcon}></img></a></td>
+              </tr>
+              <tr style={{cursor: "pointer"}} >
+                <td><strong>D2.1</strong></td>
+                <td>System design report</td>
+                <td><a href='https://doi.org/10.5281/zenodo.1244162' target='_blank'><img role='presentation' height='25' src={linkIcon}></img></a></td>
+              </tr>
+              <tr style={{cursor: "pointer"}} >
+                <td><strong>D2.1</strong></td>
+                <td>System design report</td>
+                <td><a href='https://doi.org/10.5281/zenodo.1244162' target='_blank'><img role='presentation' height='25' src={linkIcon}></img></a></td>
+              </tr>
+              <tr style={{cursor: "pointer"}} >
+                <td><strong>D2.2</strong></td>
+                <td>System prototypes report</td>
+                <td><a href='https://doi.org/10.5281/zenodo.1244164' target='_blank'><img role='presentation' height='25' src={linkIcon}></img></a></td>
+              </tr>
+              <tr style={{cursor: "pointer"}} >
+                <td><strong>D2.3</strong></td>
+                <td>Set-up and installation documentation</td>
+                <td><a href='https://doi.org/10.5281/zenodo.1244168' target='_blank'><img role='presentation' height='25' src={linkIcon}></img></a></td>
+              </tr>
+              <tr style={{cursor: "pointer"}} >
+                <td><strong>D2.6</strong></td>
+                <td>Documentation for user, developers, calibration, tutorial</td>
+                <td><a href='https://doi.org/10.5281/zenodo.1244172' target='_blank'><img role='presentation' height='25' src={linkIcon}></img></a></td>
               </tr>
             </tbody>
           </Table>
-          
+
           <h2 className='title-page'>Papers</h2>
           <Divider />
           <p className='paragraph'>
@@ -55,8 +90,10 @@ const Results = React.createClass({
           <Table striped bordered condensed hover>
             <tbody>
               <tr>
-                <th>Journal</th>
+                <th>Authors</th>
+                <th>Year</th>
                 <th>Title</th>
+                <th>Journal</th>
                 <th>Link</th>
               </tr>
               {/*<tr style={{cursor: "pointer"}} >
@@ -65,16 +102,18 @@ const Results = React.createClass({
                 <td><a href='https://b2drop.eudat.eu/s/sEGJ6jxZlUi0Pdd' target='_blank'><img role='presentation' height='25' src={linkIcon}></img></a></td>
               </tr>*/}
               <tr style={{cursor: "pointer"}} >
-                <td><strong> </strong></td>
-                <td> </td>
+                <td>Strigaro, D., Cannata, M., Cardoso, M., Antonovic, M., & Hoffmann, M.</td>
+                <td>2017</td>
+                <td>EXTENDING THE SCALABILITY OF ISTSOS WITHIN THE 4ONSE PROJECT.</td>
+                <td>The International Archives of Photogrammetry, Remote Sensing and Spatial Information Sciences</td>
                 <td>
-                    <a href='' target='_blank'><img role='presentation' height='25' src={linkIcon}></img></a>
+                    <a href='https://www.int-arch-photogramm-remote-sens-spatial-inf-sci.net/XLII-4-W2/155/2017/' target='_blank'><img role='presentation' height='25' src={linkIcon}></img></a>
                 </td>
               </tr>
             </tbody>
           </Table>
-          
-          
+
+
         </div>
       </div>
     )
