@@ -44,3 +44,7 @@ sh ./build.sh
 ```
 **N.B.**
 Do not sync the folders **build** and **node_modules** 
+
+**Publish on the server (geoservice)**
+- copy all the content of the build folder in /var/www-4onse
+- beware of the folder ***tutorial*** which should not be deleted!
