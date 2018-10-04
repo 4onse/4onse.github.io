@@ -34,6 +34,11 @@ const Results = React.createClass({
                 <td>August 2017</td>
                 <td><a href='https://b2drop.eudat.eu/s/PvySqbrCM9KnsI3' target='_blank'><img role='presentation' height='25' src={linkIcon}></img></a></td>
               </tr>
+	      <tr style={{cursor: "pointer"}} >
+                <td><strong>#2</strong></td>
+                <td>August 2018</td>
+                <td><a href='https://b2drop.eudat.eu/s/PvySqbrCM9KnsI3' target='_blank'><img role='presentation' height='25' src={linkIcon}></img></a></td>
+              </tr>
               
             </tbody>
           </Table>

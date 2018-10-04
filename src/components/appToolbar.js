@@ -169,7 +169,7 @@ const AppToolbar = React.createClass({
                     key={3}
                     primaryText="Objective"
                   />,
-                  <ListItem
+		  <ListItem
                     onClick={this.handleClickMenuItem.bind(this, 'impacts')}
                     style={{color:'grey', marginLeft: '20px'}}
                     key={4}
@@ -234,12 +234,12 @@ const AppToolbar = React.createClass({
                     onClick={this.handleClick.bind(this, this.props.location, '/videos')}
                     key={2}
                     primaryText="Videos"
-                  />,
+                  />/*,
                   <ListItem
                     onClick={this.handleClick.bind(this, this.props.location, '/materials')}
                     key={3}
                     primaryText="Materials"
-                  />
+                  />*/
                 ]}
               />
               <ListItem
@@ -300,8 +300,8 @@ const AppToolbar = React.createClass({
               >
                 <MenuItem style={styles.textMenu} onClick={this.handleClickMenuItem.bind(this, 'introduction')} primaryText={<div style={{color:'grey'}}>Introduction</div>} />
                 <MenuItem style={styles.textMenu} onClick={this.handleClickMenuItem.bind(this, 'background')} primaryText={<div style={{color:'grey', marginLeft: '20px'}}>Background</div>} />
-                <MenuItem style={styles.textMenu} onClick={this.handleClickMenuItem.bind(this, 'impacts')} primaryText={<div style={{color:'grey', marginLeft: '20px'}}>Impacts</div>} />
                 <MenuItem style={styles.textMenu} onClick={this.handleClickMenuItem.bind(this, 'objective')} primaryText={<div style={{color:'grey', marginLeft: '20px'}}>Objective</div>} />
+		<MenuItem style={styles.textMenu} onClick={this.handleClickMenuItem.bind(this, 'impacts')} primaryText={<div style={{color:'grey', marginLeft: '20px'}}>Impacts</div>} />                
                 <MenuItem style={styles.textMenu} onClick={this.handleClick.bind(this, this.props.location, '/governance')} primaryText="Governance" />
                 <MenuItem style={styles.textMenu} onClick={this.handleClick.bind(this, this.props.location, '/workingpackages')} primaryText="Working packages" />
                 <MenuItem style={styles.textMenu} onClick={this.handleClick.bind(this, this.props.location, '/casestudy')} primaryText="Case study" />
@@ -325,7 +325,6 @@ const AppToolbar = React.createClass({
               >
                 <MenuItem style={styles.textMenu} onClick={this.handleClick.bind(this, this.props.location, '/presentations')} primaryText="Presentations" />
                 <MenuItem style={styles.textMenu} onClick={this.handleClick.bind(this, this.props.location, '/videos')} primaryText="Videos" />
-                <MenuItem style={styles.textMenu} onClick={this.handleClick.bind(this, this.props.location, '/materials')} primaryText="Materials" />
                 <MenuItem style={styles.textMenu} onClick={this.handleClick.bind(this, this.props.location, '/newsletters')} primaryText="Newsletters" />
               </IconMenu>
               <FlatButton labelStyle={styles.textMenu} onTouchTap={this.handleOpenMenuOutreach} label="Outreach" />
