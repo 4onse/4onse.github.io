@@ -169,7 +169,7 @@ const AppToolbar = React.createClass({
                     key={3}
                     primaryText="Objective"
                   />,
-		  <ListItem
+		              <ListItem
                     onClick={this.handleClickMenuItem.bind(this, 'impacts')}
                     style={{color:'grey', marginLeft: '20px'}}
                     key={4}

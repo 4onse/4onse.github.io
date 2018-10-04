@@ -7,7 +7,8 @@ import linkIcon from '../data/icons/links-icon.png'
 //bootstrap
 import Table from 'react-bootstrap/lib/Table'
 
-const Results = React.createClass({
+
+const Newsletters = React.createClass({
   render () {
     return (
       <div id='page-top' style={{minHeight: (this.props.size.height-(this.props.appBar.height+160))+'px'}}>
@@ -32,12 +33,12 @@ const Results = React.createClass({
               <tr style={{cursor: "pointer"}} >
                 <td><strong>#1</strong></td>
                 <td>August 2017</td>
-                <td><a href='https://b2drop.eudat.eu/s/PvySqbrCM9KnsI3' target='_blank'><img role='presentation' height='25' src={linkIcon}></img></a></td>
+                <td><a href={process.env.PUBLIC_URL + "/data/Newsletter_1.pdf"} target='_blank'><img role='presentation' height='25' src={linkIcon}></img></a></td>
               </tr>
-	      <tr style={{cursor: "pointer"}} >
+	            <tr style={{cursor: "pointer"}} >
                 <td><strong>#2</strong></td>
                 <td>August 2018</td>
-                <td><a href='https://b2drop.eudat.eu/s/PvySqbrCM9KnsI3' target='_blank'><img role='presentation' height='25' src={linkIcon}></img></a></td>
+                <td><a href={process.env.PUBLIC_URL + "/data/Newsletter_2.pdf"} target='_blank'><img role='presentation' height='25' src={linkIcon}></img></a></td>
               </tr>
               
             </tbody>
@@ -51,4 +52,4 @@ const Results = React.createClass({
   }
 })
 
-export default Results
+export default Newsletters
