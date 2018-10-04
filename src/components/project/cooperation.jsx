@@ -36,7 +36,7 @@ const Cooperation = React.createClass({
             If you feel to participate in the effort of building and testing non-conventional
             monitoring system for strengthen sustainable data production and management for
             sustainable development subscribe using the form below after reading the 
-            <a href={process.env.PUBLIC_URL + "/data/4onseInformationSheet.pdf"}> Information Sheet </a> fill the Form below to.
+            <a href={process.env.PUBLIC_URL + "/pdf/4onseInformationSheet.pdf"}> Information Sheet </a> fill the Form below to.
             </p>
           
            <p className='paragraph'> 

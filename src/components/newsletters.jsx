@@ -33,12 +33,12 @@ const Newsletters = React.createClass({
               <tr style={{cursor: "pointer"}} >
                 <td><strong>#1</strong></td>
                 <td>August 2017</td>
-                <td><a href={process.env.PUBLIC_URL + "/data/Newsletter_1.pdf"} target='_blank'><img role='presentation' height='25' src={linkIcon}></img></a></td>
+                <td><a href={process.env.PUBLIC_URL + "/pdf/Newsletter_1.pdf"} target='_blank'><img role='presentation' height='25' src={linkIcon}></img></a></td>
               </tr>
 	            <tr style={{cursor: "pointer"}} >
                 <td><strong>#2</strong></td>
                 <td>August 2018</td>
-                <td><a href={process.env.PUBLIC_URL + "/data/Newsletter_2.pdf"} target='_blank'><img role='presentation' height='25' src={linkIcon}></img></a></td>
+                <td><a href={process.env.PUBLIC_URL + "/pdf/Newsletter_2.pdf"} target='_blank'><img role='presentation' height='25' src={linkIcon}></img></a></td>
               </tr>
               
             </tbody>
