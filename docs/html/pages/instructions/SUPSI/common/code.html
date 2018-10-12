@@ -9,10 +9,11 @@
     <title>istSOS configuration &#8212; 4onse 0.3 documentation</title>
     <link rel="stylesheet" href="../../../../_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
-    <script type="text/javascript" src="../../../../_static/documentation_options.js"></script>
+    <script type="text/javascript" id="documentation_options" data-url_root="../../../../" src="../../../../_static/documentation_options.js"></script>
     <script type="text/javascript" src="../../../../_static/jquery.js"></script>
     <script type="text/javascript" src="../../../../_static/underscore.js"></script>
     <script type="text/javascript" src="../../../../_static/doctools.js"></script>
+    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <link rel="index" title="Index" href="../../../../genindex.html" />
     <link rel="search" title="Search" href="../../../../search.html" />
     <link rel="next" title="Solar shield instructions" href="solar_shield.html" />
@@ -29,6 +30,8 @@
     <div class="document">
       <div class="documentwrapper">
         <div class="bodywrapper">
+          
+
           <div class="body" role="main">
             
   <div class="section" id="istsos-configuration">
@@ -48,7 +51,7 @@ to learn what is it and how you can use it.</p>
 </tbody>
 </table>
 </li>
-<li><p class="first">Create a new procedure clicking on the button &quot;New procedure&quot;, and add the
+<li><p class="first">Create a new procedure clicking on the button “New procedure”, and add the
 observed properties in the following order:</p>
 <ul class="simple">
 <li>Internal temperature</li>
@@ -91,28 +94,11 @@ next operations.</p>
 you can connect your computer to the arduino with a USB cable and upload
 the code. This is the step-by-step procedure to follow:</p>
 <ol class="arabic">
-<li><p class="first">Format the SD card in FAT32, download this <a class="reference download internal" href="../../../../_downloads/4onse-ws-sd.zip" download=""><code class="xref download docutils literal notranslate"><span class="pre">archive</span></code></a>
-, extract and copy it into the SD card root.
-On the SD card you should now have the following structure:</p>
-<ul class="simple">
-<li>LOG</li>
-<li>SLOG</li>
-<li>TMP</li>
-<li>config.txt</li>
-</ul>
-<div class="admonition note">
-<p class="first admonition-title">Note</p>
-<p>All the folders must be empty.
-The <em>config.txt</em> file has the content shown here below:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="m">9600</span>,26,3,2,0,0,0
-baud,escape,esc#,mode,verb,echo,ignoreRX
-</pre></div>
-</div>
-<p class="last">After this step, remember to insert the micro SD card into the OpenLog
-and the SIM card into the GPRS SIM800 module.</p>
-</div>
+<li><p class="first">Format the SD card in FAT32</p>
 </li>
-<li><p class="first">If you don't have it, download and install the Arduino IDE (<a class="reference external" href="https://www.arduino.cc/en/main/software">link1</a>).
+<li><p class="first">Insert the SD card into the OpenLog and the SIM card into the GPRS SIM800 module.</p>
+</li>
+<li><p class="first">If you don’t have it, download and install the Arduino IDE (<a class="reference external" href="https://www.arduino.cc/en/main/software">link1</a>).
 Please remember the path where you install it.</p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
@@ -129,7 +115,7 @@ Please remember the path where you install it.</p>
 <li>DHT</li>
 </ul>
 </li>
-<li><p class="first"><a class="reference download internal" href="../../../../_downloads/4onse-ws-ist.zip" download=""><code class="xref download docutils literal notranslate"><span class="pre">Download</span> <span class="pre">the</span> <span class="pre">archive</span></code></a>
+<li><p class="first"><a class="reference download internal" download="" href="../../../../_downloads/14ab2a8fab682d7fdf8a791af86dfec2/4onse-ws-ist.zip"><code class="xref download docutils literal notranslate"><span class="pre">Download</span> <span class="pre">the</span> <span class="pre">archive</span></code></a>
 and unzip it.</p>
 </li>
 <li><p class="first">Open the arduino IDE, go to <em>Files -&gt; Preferences</em>, and set the <em>Sketchbook</em> location
@@ -167,6 +153,7 @@ everithing is working.</p>
 
 
           </div>
+          
         </div>
       </div>
       <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
@@ -217,7 +204,7 @@ everithing is working.</p>
         <p>Next topic: <a href="solar_shield.html">Solar shield instructions</a></p>
       </li>
 </ul>
-  <h3><a href="../../../../index.html">Table Of Contents</a></h3>
+  <h3><a href="../../../../index.html">Table of Contents</a></h3>
   <ul>
 <li><a class="reference internal" href="#">istSOS configuration</a></li>
 <li><a class="reference internal" href="#code-uploading">Code uploading</a></li>

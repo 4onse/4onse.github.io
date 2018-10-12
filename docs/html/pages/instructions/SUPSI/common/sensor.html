@@ -9,10 +9,11 @@
     <title>Sensor instruction &#8212; 4onse 0.3 documentation</title>
     <link rel="stylesheet" href="../../../../_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
-    <script type="text/javascript" src="../../../../_static/documentation_options.js"></script>
+    <script type="text/javascript" id="documentation_options" data-url_root="../../../../" src="../../../../_static/documentation_options.js"></script>
     <script type="text/javascript" src="../../../../_static/jquery.js"></script>
     <script type="text/javascript" src="../../../../_static/underscore.js"></script>
     <script type="text/javascript" src="../../../../_static/doctools.js"></script>
+    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <link rel="index" title="Index" href="../../../../genindex.html" />
     <link rel="search" title="Search" href="../../../../search.html" />
     <link rel="next" title="istSOS configuration" href="code.html" />
@@ -29,6 +30,8 @@
     <div class="document">
       <div class="documentwrapper">
         <div class="bodywrapper">
+          
+
           <div class="body" role="main">
             
   <div class="section" id="sensor-instruction">
@@ -52,9 +55,9 @@ main box installation and the place where you will install the temperature senso
 We generally extend it with a 1.5 meter cable by soldering.</p>
 <p>From DS18B20 to connector:</p>
 <ul class="simple">
-<li>GND (black) --&gt; M05 (black)</li>
-<li>VIN (red) --&gt; M06 (red)</li>
-<li>DATA (blue or yellow) --&gt; M07 (blue) --&gt;  D9 (Arduino PIN)</li>
+<li>GND (black) –&gt; M05 (black)</li>
+<li>VIN (red) –&gt; M06 (red)</li>
+<li>DATA (blue or yellow) –&gt; M07 (blue) –&gt;  D9 (Arduino PIN)</li>
 </ul>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
@@ -78,10 +81,10 @@ terminal block.</p>
 Use a <em>4 core cable</em> to connect the sensor breakout board and the control unit.</p>
 <p>From BME280 to connector:</p>
 <ul class="simple">
-<li>GND (black) --&gt; M09 (black)</li>
-<li>5V or VIN or VCC (red) --&gt; M10 (red)</li>
-<li>SDI or SDA (green) --&gt; M11 (green) --&gt; SDA (Arduino PIN)</li>
-<li>SCK or SCL (white) --&gt; M12 (white) --&gt; SCL (Arduino PIN)</li>
+<li>GND (black) –&gt; M09 (black)</li>
+<li>5V or VIN or VCC (red) –&gt; M10 (red)</li>
+<li>SDI or SDA (green) –&gt; M11 (green) –&gt; SDA (Arduino PIN)</li>
+<li>SCK or SCL (white) –&gt; M12 (white) –&gt; SCL (Arduino PIN)</li>
 </ul>
 <table border="1" class="docutils">
 <colgroup>
@@ -99,10 +102,10 @@ Use a <em>4 core cable</em> to connect the sensor breakout board and the control
 Use a <em>4 core cable</em> to connect the sensor breakout board and the control unit.</p>
 <p>From BH1750 to connector:</p>
 <ul class="simple">
-<li>GND (black) --&gt; M15 (black)</li>
-<li>5V or VIN or VCC (red) --&gt; M16 (red)</li>
-<li>SDI or SDA (green) --&gt; M13 (green) --&gt; SDA (Arduino PIN)</li>
-<li>SCK or SCL (white) --&gt; M14 (white) --&gt; SCL (Arduino PIN)</li>
+<li>GND (black) –&gt; M15 (black)</li>
+<li>5V or VIN or VCC (red) –&gt; M16 (red)</li>
+<li>SDI or SDA (green) –&gt; M13 (green) –&gt; SDA (Arduino PIN)</li>
+<li>SCK or SCL (white) –&gt; M14 (white) –&gt; SCL (Arduino PIN)</li>
 </ul>
 <table border="1" class="docutils">
 <colgroup>
@@ -120,8 +123,8 @@ Use a <em>4 core cable</em> to connect the sensor breakout board and the control
 an adapter cut it and prepare the connection as follow.</p>
 <p>From Davis AeroCone to connector (terminal block barrier):</p>
 <ul class="simple">
-<li>DATA1 (red) --&gt; M20 (black)</li>
-<li>DATA2 (green or yellow) --&gt; M19 (blue) --&gt; D2 (Arduino PIN)</li>
+<li>DATA1 (red) –&gt; M20 (black)</li>
+<li>DATA2 (green or yellow) –&gt; M19 (blue) –&gt; D2 (Arduino PIN)</li>
 </ul>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
@@ -134,9 +137,9 @@ and the VIN (red) input connector of the M22.</p>
 <p>The anemometer, which is composed by wind direction and speed, has the
 following pinout from anemometer to terminal block barrier:</p>
 <ul class="simple">
-<li>GND and 5V (black and red) --&gt; M21 (black)</li>
-<li>speed data (yellow) --&gt; M24 (blue) --&gt; D3 (Arduino PIN)</li>
-<li>direction data (green) --&gt; M23 (yellow) --&gt; A0 (Arduino PIN)</li>
+<li>GND and 5V (black and red) –&gt; M21 (black)</li>
+<li>speed data (yellow) –&gt; M24 (blue) –&gt; D3 (Arduino PIN)</li>
+<li>direction data (green) –&gt; M23 (yellow) –&gt; A0 (Arduino PIN)</li>
 </ul>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
@@ -160,6 +163,7 @@ and the VIN (red) input connector of the M22.</p>
 
 
           </div>
+          
         </div>
       </div>
       <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
@@ -210,7 +214,7 @@ and the VIN (red) input connector of the M22.</p>
         <p>Next topic: <a href="code.html">istSOS configuration</a></p>
       </li>
 </ul>
-  <h3><a href="../../../../index.html">Table Of Contents</a></h3>
+  <h3><a href="../../../../index.html">Table of Contents</a></h3>
   <ul>
 <li><a class="reference internal" href="#">Sensor instruction</a><ul>
 <li><a class="reference internal" href="#ds18b20">DS18B20</a></li>

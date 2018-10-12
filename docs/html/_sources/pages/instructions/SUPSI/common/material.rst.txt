@@ -188,59 +188,60 @@ Return on top to :ref:`Materials`
 .. _link12: https://store.arduino.cc/usa/arduino-mega-2560-rev3
 
 .. |ds18b20| image:: ../../../../_static/sensors/DS18B20.jpg
-    :width: 100%
+    :scale: 100%
+    :align: middle
     :target: ../../../../_static/sensors/DS18B20.jpg
 
 .. |bme280| image:: ../../../../_static/sensors/BME280.jpg
-    :width: 100%
+    :width: 150px
     :target: ../../../../_static/sensors/BME280.jpg
 
 .. |dht11| image:: ../../../../_static/sensors/DHT11.jpg
-    :width: 100%
+    :width: 150px
     :target: ../../../../_static/sensors/DHT11.jpg
 
 .. |wind_speed| image:: ../../../../_static/sensors/wind_speed.jpg
-    :width: 100%
+    :width: 150px
     :target: ../../../../_static/sensors/wind_speed.jpg
 
 .. |wind_dir| image:: ../../../../_static/sensors/wind_dir.jpg
-    :width: 100%
+    :width: 150px
     :target: ../../../../_static/sensors/wind_dir.jpg
 
 .. |davis6465| image:: ../../../../_static/sensors/davis6465.jpg
-    :width: 100%
+    :width: 150px
     :target: ../../../../_static/sensors/davis6465.jpg
 
 .. |yl69| image:: ../../../../_static/sensors/YL-69.jpg
-    :width: 100%
+    :width: 150px
     :target: ../../../../_static/sensors/YL-69.jpg
 
 .. |bh1750| image:: ../../../../_static/sensors/BH1750.jpg
-    :width: 100%
+    :width: 150px
     :target: ../../../../_static/sensors/BH1750.jpg
 
 .. |lm393| image:: ../../../../_static/components/lm393.png
-    :width: 100%
+    :width: 150px
     :target: ../../../../_static/components/lm393.png
 
 .. |ds3231| image:: ../../../../_static/components/rtc.png
-    :width: 100%
+    :width: 150px
     :target: ../../../../_static/components/rtc.png
 
 .. |openlog| image:: ../../../../_static/components/openlog.png
-    :width: 100%
+    :width: 150px
     :target: ../../../../_static/components/openlog.png
 
 .. |sim800| image:: ../../../../_static/components/sim800.png
-    :width: 100%
+    :width: 150px
     :target: ../../../../_static/components/sim800.png
 
 .. |step-down| image:: ../../../../_static/components/step_down.jpg
-    :width: 100%
+    :width: 150px
     :target: ../../../../_static/components/step_down.jpg
 
 .. |arduino_mega| image:: ../../../../_static/components/arduino_mega.jpg
-    :width: 100%
+    :width: 150px
     :target: ../../../../_static/components/arduino_mega.jpg
 
 ..

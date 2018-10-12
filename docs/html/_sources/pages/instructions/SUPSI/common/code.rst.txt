@@ -47,26 +47,9 @@ Once the 4onse-mod installation is completed and the istSOS configured,
 you can connect your computer to the arduino with a USB cable and upload
 the code. This is the step-by-step procedure to follow:
 
-#. Format the SD card in FAT32, download this :download:`archive <../../../../_static/code/4onse-ws-sd.zip>`
-   , extract and copy it into the SD card root.
-   On the SD card you should now have the following structure:
+#. Format the SD card in FAT32
 
-   * LOG
-   * SLOG
-   * TMP
-   * config.txt
-
-   .. note::
-      All the folders must be empty.
-      The *config.txt* file has the content shown here below:
-
-      .. code-block:: bash
-
-         9600,26,3,2,0,0,0
-         baud,escape,esc#,mode,verb,echo,ignoreRX
-
-      After this step, remember to insert the micro SD card into the OpenLog
-      and the SIM card into the GPRS SIM800 module.
+#. Insert the SD card into the OpenLog and the SIM card into the GPRS SIM800 module.
 
 #. If you don't have it, download and install the Arduino IDE (`link1`_).
    Please remember the path where you install it.

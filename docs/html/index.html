@@ -9,13 +9,14 @@
     <title>Building a 4onse weather station &#8212; 4onse 0.3 documentation</title>
     <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-    <script type="text/javascript" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
     <script type="text/javascript" src="_static/jquery.js"></script>
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
+    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="4onse-mod weather station" href="pages/instructions/SUPSI/user/index.html" />
+    <link rel="next" title="Overview" href="pages/overview.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
   
@@ -28,13 +29,15 @@
     <div class="document">
       <div class="documentwrapper">
         <div class="bodywrapper">
+          
+
           <div class="body" role="main">
             
   <div class="section" id="building-a-4onse-weather-station">
 <h1>Building a 4onse weather station<a class="headerlink" href="#building-a-4onse-weather-station" title="Permalink to this headline">¶</a></h1>
-<a class="reference external image-reference" href="https://saythanks.io/to/kennethreitz"><img alt="https://img.shields.io/badge/time-12%20hr-green.svg" src="https://img.shields.io/badge/time-12%20hr-green.svg" /></a>
-<a class="reference external image-reference" href="https://saythanks.io/to/kennethreitz"><img alt="https://img.shields.io/badge/cost-450%20USD-green.svg" src="https://img.shields.io/badge/cost-450%20USD-green.svg" /></a>
-<a class="reference external image-reference" href="https://saythanks.io/to/kennethreitz"><img alt="https://img.shields.io/badge/difficulty-Medium-orange.svg" src="https://img.shields.io/badge/difficulty-Medium-orange.svg" /></a>
+<a class="reference external image-reference" href="https://saythanks.io/to/kennethreitz"><img alt="_images/time-12-hr-green.png" src="_images/time-12-hr-green.png" /></a>
+<a class="reference external image-reference" href="https://saythanks.io/to/kennethreitz"><img alt="_images/cost-450-USD-green.png" src="_images/cost-450-USD-green.png" /></a>
+<a class="reference external image-reference" href="https://saythanks.io/to/kennethreitz"><img alt="_images/difficulty-Medium-orange.png" src="_images/difficulty-Medium-orange.png" /></a>
 <div class="section" id="weather-station-documentation">
 <h2>Weather station documentation<a class="headerlink" href="#weather-station-documentation" title="Permalink to this headline">¶</a></h2>
 <p>This documentation aims to be a comprehensive guide to build the first official
@@ -49,68 +52,15 @@ specific questions.</p>
 SENSING THE ENVIRONMENT) is funded by the Swiss National Science
 Foundation (SNSF) in the context of the Research for Development (R4D)
 program with decision IZ07Z0_160906/1. One of the project outcames is an Environmental
-Monitoring System (EMS) based on &quot;Open&quot; technogies, including software, hardware,
+Monitoring System (EMS) based on “Open” technogies, including software, hardware,
 standard and data.</p>
-</div>
-<div class="section" id="overview">
-<h2>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">¶</a></h2>
-<p>The proposed weather station is a cost-effective solutions that
-includes different sensors connected to the Arduino Mega 2560 board
-that manages the data collection, logging and communication trough a
-GPRS module (SIM800). Measures are automatically sent to the
-<a class="reference external" href="http://www.istsos.org">istSOS</a> open platform that enable data
-management and distribution using the Sensor Observation Service (<a class="reference external" href="http://www.opengeospatial.org/standards/sos">SOS</a>)
-open standard from the Open Geoscpatial Consortium (<a class="reference external" href="http://www.opengeospatial.org">OGC</a>).</p>
-<p>The following climatic parameters are observed:</p>
-<ul class="simple">
-<li>External air temperature (<strong>DS18B20</strong>)</li>
-<li>External air humidity (<strong>BME280</strong>)</li>
-<li>Barometric Pressure (<strong>BME280</strong>)</li>
-<li>Precipitation (<strong>Davis AeroCone collector</strong>)</li>
-<li>Wind speed and direction (<strong>SEN-08942</strong>)</li>
-<li>Soil moisture (<strong>YL-69</strong>)</li>
-</ul>
-<p>Currently, we are developing two versions based on the same components, but with different building strategies: the <strong>4onse-mod</strong> uses wires and connectors while <strong>4onse-pcb</strong> uses printed board.</p>
-<table border="1" class="docutils">
-<colgroup>
-<col width="4%" />
-<col width="21%" />
-<col width="29%" />
-<col width="17%" />
-<col width="17%" />
-<col width="13%" />
-</colgroup>
-<thead valign="bottom">
-<tr class="row-odd"><th class="head">n°</th>
-<th class="head">Name</th>
-<th class="head">Link to manual</th>
-<th class="head">Building effort</th>
-<th class="head">Reproducibility</th>
-<th class="head">Price (USD)</th>
-</tr>
-</thead>
-<tbody valign="top">
-<tr class="row-even"><td>#1</td>
-<td>4onse-mod</td>
-<td><a class="reference internal" href="pages/instructions/SUPSI/user/index.html#index-supsi-user"><span class="std std-ref">4onse-mod weather station</span></a></td>
-<td>4/5</td>
-<td>4/5</td>
-<td>xxx</td>
-</tr>
-<tr class="row-odd"><td>#2</td>
-<td>4onse-pcb</td>
-<td><a class="reference internal" href="pages/instructions/UoM/index.html#index-uom"><span class="std std-ref">4onse-pcb weather station</span></a></td>
-<td>3/5</td>
-<td>3/5</td>
-<td>xxx</td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="section" id="go-to-the-guides">
 <h2>Go to the guides<a class="headerlink" href="#go-to-the-guides" title="Permalink to this headline">¶</a></h2>
+<p>The project has developed two type of system, which are based on the same sensors but differs for hook up approach: the <strong>4onse-mod</strong> uses wires and connectors while <strong>4onse-pcb</strong> uses printed board.</p>
 <div class="toctree-wrapper compound">
 <ul>
+<li class="toctree-l1"><a class="reference internal" href="pages/overview.html">Overview</a></li>
 <li class="toctree-l1"><a class="reference internal" href="pages/instructions/SUPSI/user/index.html">4onse-mod weather station</a></li>
 <li class="toctree-l1"><a class="reference internal" href="pages/instructions/UoM/index.html">4onse-pcb weather station</a></li>
 </ul>
@@ -125,6 +75,7 @@ open standard from the Open Geoscpatial Consortium (<a class="reference external
 
 
           </div>
+          
         </div>
       </div>
       <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
