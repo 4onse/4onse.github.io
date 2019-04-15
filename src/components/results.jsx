@@ -35,6 +35,15 @@ const Results = React.createClass({
                 <td><a href='https://b2drop.eudat.eu/s/sEGJ6jxZlUi0Pdd' target='_blank'><img role='presentation' height='25' src={linkIcon}></img></a></td>
               </tr>*/}
               <tr style={{cursor: "pointer"}} >
+                <td>Strigaro, D., Cannata, M. & Antonovic, M.</td>
+                <td>2019</td>
+                <td>Boosting a Weather Monitoring System in Low Income Economies Using Open and Non-Conventional Systems: Data Quality Analysis.</td>
+                <td>Sensors</td>
+                <td>
+                    <a href='https://www.mdpi.com/1424-8220/19/5/1185/htm' target='_blank'><img role='presentation' height='25' src={linkIcon}></img></a>
+                </td>
+              </tr>
+              <tr style={{cursor: "pointer"}} >
                 <td>Strigaro, D., Cannata, M., Cardoso, M., Antonovic, M., & Hoffmann, M.</td>
                 <td>2017</td>
                 <td>EXTENDING THE SCALABILITY OF ISTSOS WITHIN THE 4ONSE PROJECT.</td>
