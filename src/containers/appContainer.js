@@ -3,6 +3,8 @@ import React from 'react';
 //components
 import AppToolbar from '../components/appToolbar.js';
 import AppFooter from '../components/appFooter';
+import StationPage from '../components/stationPage.jsx'
+
 // material-ui
 import RefreshIndicator from 'material-ui/RefreshIndicator';
 
@@ -93,15 +95,26 @@ const AppContainer = React.createClass({
   },
   render() {
     if (this.state.size.width>0) {
-      return (
-        <div id='app' className="App">
-          <AppToolbar width={this.state.size.width} access={false} appBar={this.state.appBar}/>
-          <div style={{width: this.state.size.width, paddingTop:this.state.appBar.height}}>
-            {React.cloneElement(this.props.children, {size: this.state.size, appBar: this.state.appBar})}
+      if (this.props.location.query.id !== undefined) {
+        return(
+          <div id='app' style={{backgroundColor: '#212124'}} className="App">
+            <AppToolbar width={this.state.size.width} access={false} appBar={this.state.appBar}/>
+            <div style={{width: this.state.size.width, paddingTop:this.state.appBar.height}}>
+              <StationPage id={this.props.location.query.id} />
+            </div>
           </div>
-          <AppFooter size={this.state.size} route={this.props.location}/>
-        </div>
-      )
+        )
+      } else {
+        return (
+          <div id='app' className="App">
+            <AppToolbar width={this.state.size.width} access={false} appBar={this.state.appBar}/>
+            <div style={{width: this.state.size.width, paddingTop:this.state.appBar.height}}>
+              {React.cloneElement(this.props.children, {size: this.state.size, appBar: this.state.appBar})}
+            </div>
+            <AppFooter size={this.state.size} route={this.props.location}/>
+          </div>
+        )
+      }
     } else {
       const style = {
         container: {
@@ -126,7 +139,7 @@ const AppContainer = React.createClass({
           </div>
           <AppFooter size={this.state.size} />
         </div>
-      )
+      )      
     }
   }
 })
