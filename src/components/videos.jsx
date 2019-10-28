@@ -10,7 +10,10 @@ const Videos = React.createClass({
         <div className='container'>
           <h2 className='title-page'>Videos</h2>
           <Divider />
-	  <p className='paragraph'>
+          <p className='paragraph'>
+             <iframe width="560" height="315" src="https://www.youtube.com/embed/PDI6wchTBaw" frameborder="0" allowfullscreen></iframe>
+          </p>
+	        <p className='paragraph'>
              <iframe width="560" height="315" src="https://www.youtube.com/embed/AexkcoD791s" frameborder="0" allowfullscreen></iframe>
           </p>
           <p className='paragraph'>

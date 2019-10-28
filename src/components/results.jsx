@@ -35,6 +35,24 @@ const Results = React.createClass({
                 <td><a href='https://b2drop.eudat.eu/s/sEGJ6jxZlUi0Pdd' target='_blank'><img role='presentation' height='25' src={linkIcon}></img></a></td>
               </tr>*/}
               <tr style={{cursor: "pointer"}} >
+                <td>M. Cannata, M. Antonovic, D. Strigaro and M. Cardoso</td>
+                <td>2019</td>
+                <td>Performance Testing of istSOS Under High Load Scenarios.</td>
+                <td>ISPRS International Journal of Geo-Information</td>
+                <td>
+                    <a href='https://www.mdpi.com/558652' target='_blank'><img role='presentation' height='25' src={linkIcon}></img></a>
+                </td>
+              </tr>
+              <tr style={{cursor: "pointer"}} >
+                <td> D. Strigaro, M. Cannata, E. Warusavitharana, B.H. Sudantha, and R. Ratnayake</td>
+                <td>2019</td>
+                <td>An open drought monitoring system for the Deduru Oya basin in Sri Lanka in the context of the 4onse project.</td>
+                <td>The International Archives of Photogrammetry, Remote Sensing and Spatial Information Sciences</td>
+                <td>
+                    <a href='https://www.int-arch-photogramm-remote-sens-spatial-inf-sci.net/XLII-4-W14/227/2019/' target='_blank'><img role='presentation' height='25' src={linkIcon}></img></a>
+                </td>
+              </tr>
+              <tr style={{cursor: "pointer"}} >
                 <td>Strigaro, D., Cannata, M. & Antonovic, M.</td>
                 <td>2019</td>
                 <td>Boosting a Weather Monitoring System in Low Income Economies Using Open and Non-Conventional Systems: Data Quality Analysis.</td>
