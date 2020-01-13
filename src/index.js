@@ -29,6 +29,7 @@ import Calendar from './components/calendar';
 import Results from './components/results';
 import Advisoryboard from './components/advisoryboard'
 import Presentations from './components/presentations';
+import Workshops from './components/workshops';
 import Videos from './components/videos';
 import Materials from './components/materials';
 import Newsletters from './components/newsletters';
@@ -58,6 +59,7 @@ ReactDOM.render(
         <Route path='stakeholders' component={Stakeholders} />
         <Route path='advisoryboard' component={Advisoryboard} />
         <Route path='presentations' component={Presentations} />
+        <Route path='workshops' component={Workshops} />
         <Route path='videos' component={Videos} />
         <Route path='materials' component={Materials} />
         <Route path='newsletters' component={Newsletters} />

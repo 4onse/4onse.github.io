@@ -162,13 +162,64 @@ const Results = React.createClass({
                 <td><a href='https://doi.org/10.5281/zenodo.1244168' target='_blank'><img role='presentation' height='25' src={linkIcon}></img></a></td>
               </tr>
               <tr style={{cursor: "pointer"}} >
+                <td><strong>D2.4</strong></td>
+                <td>Calibration and testing</td>
+                <td><a href='https://doi.org/10.5281/zenodo.3601816' target='_blank'><img role='presentation' height='25' src={linkIcon}></img></a></td>
+              </tr>
+              <tr style={{cursor: "pointer"}} >
+                <td><strong>D2.5</strong></td>
+                <td>Experimantal monitoring system deployment report</td>
+                <td><a href='https://doi.org/10.5281/zenodo.3601831' target='_blank'><img role='presentation' height='25' src={linkIcon}></img></a></td>
+              </tr>
+              <tr style={{cursor: "pointer"}} >
                 <td><strong>D2.6</strong></td>
                 <td>Documentation for user, developers, calibration, tutorial</td>
                 <td><a href='https://doi.org/10.5281/zenodo.1244172' target='_blank'><img role='presentation' height='25' src={linkIcon}></img></a></td>
               </tr>
+              <tr style={{cursor: "pointer"}} >
+                <td><strong>D2.7</strong></td>
+                <td>Experimental monitoring system management</td>
+                <td><a href='https://doi.org/10.5281/zenodo.3601865' target='_blank'><img role='presentation' height='25' src={linkIcon}></img></a></td>
+              </tr>
+              <tr style={{cursor: "pointer"}} >
+                <td><strong>D3.1</strong></td>
+                <td>Data quality (*)</td>
+                <td></td>
+              </tr>
+              <tr style={{cursor: "pointer"}} >
+                <td><strong>D3.2</strong></td>
+                <td>System durability</td>
+                <td><a href='https://doi.org/10.5281/zenodo.3604192' target='_blank'><img role='presentation' height='25' src={linkIcon}></img></a></td>
+              </tr>
+              <tr style={{cursor: "pointer"}} >
+                <td><strong>D3.3</strong></td>
+                <td>Cost</td>
+                <td><a href='https://doi.org/10.5281/zenodo.3601869' target='_blank'><img role='presentation' height='25' src={linkIcon}></img></a></td>
+              </tr>
+              <tr style={{cursor: "pointer"}} >
+                <td><strong>D3.4</strong></td>
+                <td>Performance</td>
+                <td><a href='https://doi.org/10.5281/zenodo.3604198' target='_blank'><img role='presentation' height='25' src={linkIcon}></img></a></td>
+              </tr>
+              <tr style={{cursor: "pointer"}} >
+                <td><strong>D3.5</strong></td>
+                <td>Sustainability</td>
+                <td><a href='https://doi.org/10.5281/zenodo.3604202' target='_blank'><img role='presentation' height='25' src={linkIcon}></img></a></td>
+              </tr>
+              <tr style={{cursor: "pointer"}} >
+                <td><strong>D4.1</strong></td>
+                <td>Tank management application</td>
+                <td><a href='https://doi.org/10.5281/zenodo.3604206' target='_blank'><img role='presentation' height='25' src={linkIcon}></img></a></td>
+              </tr>
+              <tr style={{cursor: "pointer"}} >
+                <td><strong>D4.2</strong></td>
+                <td>Extreme events application (*)</td>
+                <td></td>
+              </tr>
             </tbody>
           </Table>
-
+          * under embargo period until scientific publication
+          <br />
           
 
 

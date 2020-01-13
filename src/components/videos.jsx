@@ -13,6 +13,9 @@ const Videos = React.createClass({
           <p className='paragraph'>
              <iframe width="560" height="315" src="https://www.youtube.com/embed/PDI6wchTBaw" frameborder="0" allowfullscreen></iframe>
           </p>
+          <p className='paragraph'>
+             <iframe width="560" height="315" src="https://www.youtube.com/embed/PDI6wchTBaw" frameborder="0" allowfullscreen></iframe>
+          </p>
 	        <p className='paragraph'>
              <iframe width="560" height="315" src="https://www.youtube.com/embed/AexkcoD791s" frameborder="0" allowfullscreen></iframe>
           </p>

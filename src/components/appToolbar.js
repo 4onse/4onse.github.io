@@ -231,6 +231,11 @@ const AppToolbar = React.createClass({
                     primaryText="Presentations"
                   />,
                   <ListItem
+                    onClick={this.handleClick.bind(this, this.props.location, '/workshops')}
+                    key={1}
+                    primaryText="Workshops"
+                  />,
+                  <ListItem
                     onClick={this.handleClick.bind(this, this.props.location, '/videos')}
                     key={2}
                     primaryText="Videos"
@@ -324,6 +329,7 @@ const AppToolbar = React.createClass({
                 onRequestChange={this.handleOnRequestChangeOutreach}
               >
                 <MenuItem style={styles.textMenu} onClick={this.handleClick.bind(this, this.props.location, '/presentations')} primaryText="Presentations" />
+                <MenuItem style={styles.textMenu} onClick={this.handleClick.bind(this, this.props.location, '/workshops')} primaryText="Workshops" />
                 <MenuItem style={styles.textMenu} onClick={this.handleClick.bind(this, this.props.location, '/videos')} primaryText="Videos" />
                 <MenuItem style={styles.textMenu} onClick={this.handleClick.bind(this, this.props.location, '/newsletters')} primaryText="Newsletters" />
               </IconMenu>
