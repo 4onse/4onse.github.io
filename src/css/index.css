@@ -99,3 +99,8 @@ body {
   position: absolute;
   bottom: 0;
 }
+
+.btn-4onse:hover {
+  border-left: '6px solid blue';
+  background-color: #cfcfcf;
+}

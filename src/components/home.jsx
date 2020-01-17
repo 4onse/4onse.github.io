@@ -5,32 +5,33 @@ import {hashHistory} from 'react-router'
 
 //bootstrap
 import Grid from 'react-bootstrap/lib/Grid'
-import Row from 'react-bootstrap/lib/Row'
 import Col from 'react-bootstrap/lib/Col'
-import Carousel from 'react-bootstrap/lib/Carousel'
 
-//material ui
-import RaisedButton from 'material-ui/RaisedButton';
+// twitter widget
+import { Timeline } from 'react-twitter-widgets'
 
 // icons
-import pageTop from '../data/images/background/page-top_scaled.jpg'
-import aboutUs from '../data/images/background/about-us_scaled.jpg'
-import objective from '../data/images/background/objective_scaled.jpg'
-import desired from '../data/images/background/desired_scaled.jpg'
-import partners from '../data/images/background/partners_scaled.jpg'
+// import pageTop from '../data/images/background/page-top_scaled.jpg'
+// import aboutUs from '../data/images/background/about-us_scaled.jpg'
+// import objective from '../data/images/background/objective_scaled.jpg'
+// import desired from '../data/images/background/desired_scaled.jpg'
+// import partners from '../data/images/background/partners_scaled.jpg'
 import openSoftware from '../data/images/team/open-software.svg'
 import openHardware from '../data/images/team/open-hardware.svg'
 import openStandard from '../data/images/team/open-standard.svg'
 import openData from "../data/images/team/open-data.svg"
+
+// containers
+import DataViewerContainer from '../containers/DataViewerContainer'
 
 //css
 import '../css/home.css'
 
 const Home = React.createClass({
   componentDidMount () {
-    window.twttr.widgets.load(
-      document.getElementById("twitter-container")
-    )
+    // window.twttr.widgets.load(
+    //   document.getElementById("twitter-container")
+    // )
   },
   handleButtonClick (value, event) {
     if (value==='partners') {
@@ -60,109 +61,89 @@ const Home = React.createClass({
       styleCarouselItemImg = {width: '100%'}
     }
     let heightRow = (this.props.size.height - (heightCarousel+this.props.appBar.height+160))
-    let styleCarouselItem = {height:heightCarousel}
+    // let styleCarouselItem = {height:heightCarousel}
     return (
       <div id="page-top" style={{textAlign:'center'}}>
-        <Carousel>
-          <Carousel.Item style={styleCarouselItem}>
-            <img style={styleCarouselItemImg} alt="900x500" src={pageTop}/>
-            <Carousel.Caption style={styleCarouselCaption}>
-              <h3 style={styleCarouselTitle}>The 4ONSE project</h3>
-              <p>4 times open & non-conventional technology for</p>
-              <p style={{animation: 'heartbeat 1s infinite'}}>SENSING THE ENVIRONMENT</p>
-              <RaisedButton label="Read more" onClick={this.handleButtonClick.bind(this, 'introduction')}/>
-            </Carousel.Caption>
-          </Carousel.Item>
-          <Carousel.Item style={styleCarouselItem}>
-            <img style={styleCarouselItemImg} alt="900x500" src={aboutUs}/>
-            <Carousel.Caption style={styleCarouselCaption}>
-              <h3 style={styleCarouselTitle}>BACKGROUND</h3>
-              <p>Non-conventional monitoring system based on low cost and open technologies may be a great opportunity</p>
-              <RaisedButton label="Read more" onClick={this.handleButtonClick.bind(this, 'background')}/>
-            </Carousel.Caption>
-          </Carousel.Item>
-          <Carousel.Item style={styleCarouselItem}>
-            <img style={styleCarouselItemImg} alt="900x500" src={objective}/>
-            <Carousel.Caption style={styleCarouselCaption}>
-              <h3 style={styleCarouselTitle}>OBJECTIVE OF THE PROJECT</h3>
-              <p>Integrating and further developing the available technologies to implement a fully open (data, standard, hardware and software) solution</p>
-              <RaisedButton label="Read more" onClick={this.handleButtonClick.bind(this, 'objective')}/>
-            </Carousel.Caption>
-          </Carousel.Item>
-          <Carousel.Item style={styleCarouselItem}>
-            <img style={styleCarouselItemImg} alt="900x500" src={desired}/>
-            <Carousel.Caption style={styleCarouselCaption}>
-              <h3 style={styleCarouselTitle}>CHANGES AND IMPACTS</h3>
-              <p>The ultimate desired impact is to strengthen the capacity of data production, usage and management in developing countries.</p>
-              <RaisedButton label="Read more" onClick={this.handleButtonClick.bind(this, 'impacts')}/>
-            </Carousel.Caption>
-          </Carousel.Item>
-          <Carousel.Item style={styleCarouselItem}>
-            <img style={styleCarouselItemImg} alt="900x500" src={partners}/>
-            <Carousel.Caption style={styleCarouselCaption}>
-              <h3 style={styleCarouselTitle}>PARTNERS & COLLABORATIONS</h3>
-              <p></p>
-              <RaisedButton label="Read more" onClick={this.handleButtonClick.bind(this, 'partners')}/>
-            </Carousel.Caption>
-          </Carousel.Item>
-        </Carousel>
-        <Grid className='grid-home' style={{width:this.props.size.width+'px', height: heightRow, display: 'table',padding:'10px 0px 10px 0px'}}>
-          <Row style={{verticalAlign: 'middle', display:'table-cell'}}>
-            <Col md={10} style={{padding: '0px'}}>
-              <Col md={3} sm={6} xs={12}>
-                <figure>
-                  <img src={openSoftware} alt="Team Member" />
-                  <figcaption>
-                    <strong>IstSOS</strong>
-                    <br/>
-                    Open SOftware
-                  </figcaption>
-                </figure>
-              </Col>
-              <Col md={3} sm={6} xs={12}>
-                <div>
+        <Grid style={{width: '100%', float: 'none', display: 'table', padding:'0px 0px 0px 0px'}}>
+          <div style={{display: 'table-row'}}>
+            <DataViewerContainer 
+              styleClass='grid-home'
+              width={this.props.size.width}
+              height={heightCarousel}
+              diyplay='table'
+            />
+          </div>
+          <div style={{backgroundColor: '#333', display: 'table-row', height: heightRow/5, width: this.props.size.width+'px',margin: 0}}>
+            <div style={{display: 'table-cell', verticalAlign: 'middle', backgroundColor: '#333', color: 'white', fontSize:'12'}}>
+              <h4><b>Streghthening environmental monitoring system with fully open technologies</b></h4>
+            </div>
+          </div>
+          <div style={{height: (heightRow*4)/5, display: 'table-row', }}>
+              <Col md={2} style={{marginTop:'50px'}}>
+                <a href='http://www.istsos.org' target='_blank'>
                   <figure>
-                    <img src={openHardware} alt="Team Member" />
+                    <img src={openSoftware} alt="istSOS" />
+                    <figcaption>
+                      <strong>IstSOS</strong>
+                      <br/>
+                      Open SOftware
+                    </figcaption>
+                  </figure>
+                </a>
+              </Col>
+              <Col md={2} style={{marginTop:'50px'}}>
+                <a href='http://arduino.cc' target='_blank'>
+                  <figure>
+                    <img src={openHardware} alt="Arduino" />
                     <figcaption>
                       <strong>Arduino</strong>
                       <br/>
                       Open Hardware
                     </figcaption>
                   </figure>
-                </div>
+                </a>
               </Col>
-              <div className="clearfix visible-sm"></div>
-              <Col md={3} sm={6} xs={12}>
-                <div>
+              {/* <div className="clearfix visible-sm"></div> */}
+              <Col md={2} style={{marginTop:'50px'}}>
+                <a href='https://zenodo.org/search?page=1&size=20&q=4onse' target='_blank'>
                   <figure>
-                    <img src={openData} alt="Team Member" />
+                    <img src={openData} alt="Zenodo portal" />
                     <figcaption>
-                      <strong>CKAN</strong>
+                      <strong>Zenodo</strong>
                       <br/>
                       Open Data
                     </figcaption>
                   </figure>
-                </div>
+                </a>
               </Col>
-              <Col md={3} sm={6} xs={12}>
-                <div>
+              <Col md={2} style={{marginTop:'50px'}}>
+                <a href='https://www.opengeospatial.org/standards/sos' target='_blank'>
                   <figure>
-                    <img src={openStandard} alt="Team Member" />
+                    <img src={openStandard} alt="SOS OGC" />
                     <figcaption>
                       <strong>OGC SOS</strong>
                       <br/>
                       Open Standard
                     </figcaption>
                   </figure>
-                </div>
+                </a>
               </Col>
-            </Col>
-            <Col md={2} style={{maxHeight: '218px', padding:'0.1px', overflowY: 'auto'}}>
+              <Col md={4}>
               <div id='twitter-container'>
-                <a className="twitter-timeline" href="https://twitter.com/SNSF_4onse"></a>
+                <Timeline
+                  dataSource={{
+                    sourceType: 'profile',
+                    screenName: 'SNSF_4onse'
+                  }}
+                  options={{
+                    username: 'SNSF_4onse',
+                    height: ((heightRow*4)/5)-5
+                  }}
+                  onLoad={() => console.log('Timeline is loaded!')}
+                />
               </div>
             </Col>
-          </Row>
+          </div>
         </Grid>
       </div>
     )

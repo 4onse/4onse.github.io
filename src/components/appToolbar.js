@@ -1,14 +1,3 @@
-// react
-import React from 'react';
-// react router
-import {browserHistory} from 'react-router'
-// scroll
-var scrollIntoView = require('scroll-into-view')
-//loghi
-import FouronseLogo from '../data/icons/4ONSE_logo.png'
-// bootstrap
-import Button from 'react-bootstrap/lib/Button'
-import Glyphicon from 'react-bootstrap/lib/Glyphicon'
 // material ui
 import AppBar from 'material-ui/AppBar';
 import FlatButton from 'material-ui/FlatButton';
@@ -25,9 +14,19 @@ import CommunicationContactMail from 'material-ui/svg-icons/communication/contac
 import {List, ListItem} from 'material-ui/List';
 import Divider from 'material-ui/Divider';
 import Drawer from 'material-ui/Drawer';
-
 //css
 import '../css/toolbar.css'
+// bootstrap
+import Button from 'react-bootstrap/lib/Button'
+import Glyphicon from 'react-bootstrap/lib/Glyphicon'
+//loghi
+import FouronseLogo from '../data/icons/4ONSE_logo.png'
+// react
+import React from 'react';
+// react router
+import {browserHistory} from 'react-router'
+// scroll
+var scrollIntoView = require('scroll-into-view')
 
 const AppToolbar = React.createClass({
   getInitialState () {
