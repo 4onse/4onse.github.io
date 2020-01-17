@@ -75,7 +75,7 @@ const Home = React.createClass({
           </div>
           <div style={{backgroundColor: '#333', display: 'table-row', height: heightRow/5, width: this.props.size.width+'px',margin: 0}}>
             <div style={{display: 'table-cell', verticalAlign: 'middle', backgroundColor: '#333', color: 'white', fontSize:'12'}}>
-              <h4><b>Streghthening environmental monitoring system with fully open technologies</b></h4>
+              <h4><b>Strengthening environmental monitoring system with fully open technologies</b></h4>
             </div>
           </div>
           <div style={{height: (heightRow*4)/5, display: 'table-row', }}>
