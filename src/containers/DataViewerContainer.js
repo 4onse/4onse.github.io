@@ -15,8 +15,8 @@ import board from '../data/images/board.jpg'
 
 var x = 7; // go back 5 days!
 
-const end_time = new Date('2019-11-16T10:20:30Z')
-const begin_time = new Date('2019-11-16T10:20:30Z')
+const end_time = new Date()
+const begin_time = new Date()
 
 begin_time.setDate(begin_time.getDate() - x);
 
