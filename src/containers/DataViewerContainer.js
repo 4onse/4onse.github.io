@@ -184,7 +184,7 @@ class DataViewerContainer extends Component{
         }
         return(
             <Grid className={styleClass} style={{width: width+'px', padding:'0px 0px 0px 0px'}}>
-                <Col md={2} style={{padding: 0, height: height}}>
+                <Col md={12} style={{padding: 0, height: height}}>
                     <Carousel>
                         <Carousel.Item style={{height:'100%'}}>
                             <img style={{height:height, margin: 'auto'}} src={stations}/>
@@ -203,10 +203,10 @@ class DataViewerContainer extends Component{
                         </Carousel.Item>
                     </Carousel>
                 </Col>
-                <Col md={9}>
+                {/* <Col md={9}>
                     {isLoading ? <p>Loading</p> : <ChartComponent data={parameters} height={height} />}
-                </Col>
-                <Col md={1}>
+                </Col> */}
+                {/* <Col md={4}>
                     <h4>Sri Lanka<br/>4onse-Net</h4>
                     <div className='btn-4onse' style={btnStyle}>
                         <a
@@ -216,9 +216,9 @@ class DataViewerContainer extends Component{
                                 color: 'black'
                             }}
                         >
-                            Data<br/>management
+                            Data<br/>management */}
                             {/* <img src={istsosLogo} width='100%'/> */}
-                        </a>
+                        {/* </a>
                     </div>
                     <div className='btn-4onse' style={btnStyle}>
                         <a
@@ -228,9 +228,9 @@ class DataViewerContainer extends Component{
                                 color: 'black'
                             }}
                         >
-                            Data<br/>viewer
+                            Data<br/>viewer */}
                             {/* <img src={viewerLogo} width='100%'/> */}
-                        </a>
+                        {/* </a>
                     </div>
                     <div className='btn-4onse' style={btnStyle}>
                         <a
@@ -240,9 +240,9 @@ class DataViewerContainer extends Component{
                                 color: 'black'
                             }}
                         >
-                            Data<br/>maintenance
+                            Data<br/>maintenance */}
                             {/* <img src={odkLogo} width='100%'/> */}
-                        </a>
+                        {/* </a>
                     </div>
                     <div className='btn-4onse' style={btnStyle}>
                         <a
@@ -252,11 +252,11 @@ class DataViewerContainer extends Component{
                                 color: 'black'
                             }}
                         >
-                            Drought<br/>monitoring
+                            Drought<br/>monitoring */}
                             {/* <img src={odkLogo} width='100%'/> */}
-                        </a>
+                        {/* </a>
                     </div>
-                </Col>
+                </Col> */}
             </Grid>
         )
     }
